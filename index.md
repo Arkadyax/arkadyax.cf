@@ -1,2 +1,2 @@
-# Hang On!
+# Arkadyax Software
 New Website Coming Soon!
