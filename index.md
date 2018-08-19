@@ -1,3 +1,3 @@
-![img](https://plus.google.com/photos/photo/103694217233964060086/6591478041102783970?authkey=CL6CwsiE2uCG1AE){:class="img-responsive"}
+![img](http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Terminal-Pc-104-icon.png){:class="img-responsive"}
 # Arkadyax Software
 New Website Coming Soon!
