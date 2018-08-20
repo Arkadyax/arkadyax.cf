@@ -13,6 +13,9 @@ collections:
   open_source_projects:
     output: true
     permalink: /:collection/:name
+  search us:
+    output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:
