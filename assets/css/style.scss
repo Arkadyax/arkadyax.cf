@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "profile_card";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1600px;
+}
+
+a.nostyle {
+    text-decoration: none;
+    color: inherit;
+}
