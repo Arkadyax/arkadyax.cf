@@ -24,7 +24,7 @@ sass:
   sass_dir: _sass
   
 team:
-- name: Lucas Woddruff
+- name: Lukas Woodruff
   role: CEO
   github: mentalvenom
   email: replitcode # the @arkadyax.cf is added automatically
@@ -49,7 +49,7 @@ team:
   github: HappyFakeBoulder
   email: happyfakeboulder
 
-- name: Vandesm14
+- name: Shane Vandegrift
   role: Campaign Manager
   github: Vandesm14
   email: vandesm14
