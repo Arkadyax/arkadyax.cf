@@ -1,2 +1,2 @@
 # arkadyax.cf
-The website for Arkadyax
+Arkadyax Software Website
