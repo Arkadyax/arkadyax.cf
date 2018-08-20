@@ -5,7 +5,3 @@
 
 
 <h2> Now meet the team</h2>
-
-{% for member in site.team %}
-  {% include profile_card.html profile=member %}  
-{% endfor %}
