@@ -1,3 +1,55 @@
 theme: jekyll-theme-hacker
+
 title: Arkadyax Software
 description: Startup software company based all over the world!
+
+plugins:
+  - jekyll-mentions
+
+collections:
+  products:
+    output: true
+    permalink: /:collection/:name
+  open_source_projects:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+sass:
+  sass_dir: _sass
+  
+team:
+- name: Lucas Woddruff
+  role: CEO
+  github: mentalvenom
+  email: replitcode # the @arkadyax.cf is added automatically
+
+- name: Elias Bomberger
+  role: Vice President
+  github: ebomberger23
+  email: elias
+
+- name: Ibraheem Rodrigues
+  role: Chief Operations Officer
+  github: IbraheemR
+  email: oban
+
+- name: Moopy
+  role: Chief Visionary Officer
+  github: Moopirs
+  email: moopy
+
+- name: HappyFakeBoulder
+  role: Marketing Manager
+  github: HappyFakeBoulder
+  email: happyfakeboulder
+
+- name: Vandesm14
+  role: Campaign Manager
+  github: Vandesm14
+  email: vandesm14

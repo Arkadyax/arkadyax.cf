@@ -1,1 +1,0 @@
-Arkadyax Software
