@@ -56,3 +56,13 @@ team:
   role: Campaign Manager
   github: Vandesm14
   email: vandesm14
+  
+  - name: Caleb
+  role: Chief Software Developer
+  github: Caleb
+  email: caleb
+  
+  - name: Haya Odeh
+  role: Designer
+  github: hayaoden
+  email: hayaodeh
