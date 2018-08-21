@@ -57,12 +57,12 @@ team:
   github: Vandesm14
   email: vandesm14
   
-  - name: Caleb
+- name: Caleb
   role: Chief Software Developer
   github: Caleb
   email: caleb
   
-  - name: Haya Odeh
+- name: Haya Odeh
   role: Designer
   github: hayaoden
   email: hayaodeh
