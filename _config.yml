@@ -22,6 +22,9 @@ collections:
   code of the month:
     output: true
     permalink: /:collection/:name
+  game of the month:
+    output: true
+    permalink: /:collection/:name
 defaults:
   - scope:
       path: ""
