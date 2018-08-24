@@ -18,5 +18,5 @@ title: home
 
 # Arkadyax Software
 <h3>New Website Coming Soon!</h3>
-<a href="https://twitter.com/arkadyax">Follow Us On Twitter!</a><a href="https://www.facebook.com/arkadyaxsw/?modal=admin_todo_tour" class="fa fa-facebook"></a><br/>
-<a href="https://www.facebook.com/arkadyaxsw/?modal=admin_todo_tour">Like Us On Facebook!</a><a href="https://twitter.com/arkadyax/" class="fa fa-twitter"></a>
+<a href="https://twitter.com/arkadyax">Follow Us On Twitter!</a><a href="https://www.facebook.com/arkadyaxsw/?modal=admin_todo_tour" target="_blank"  class="fa fa-facebook"></a><br/>
+<a href="https://www.facebook.com/arkadyaxsw/?modal=admin_todo_tour">Like Us On Facebook!</a><a href="https://twitter.com/arkadyax/" target="_blank"  class="fa fa-twitter"></a>
