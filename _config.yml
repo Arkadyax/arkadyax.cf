@@ -19,6 +19,9 @@ collections:
   search:
     output: true
     permalink: /:collection/:name
+  code of the month:
+    output: true
+    permalink: /:collection/:name
 defaults:
   - scope:
       path: ""
