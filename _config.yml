@@ -16,6 +16,12 @@ collections:
   search us:
     output: true
     permalink: /:collection/:name
+  facebook:
+    output: true
+    permalink: /:collection/:name
+  twitter:
+    output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:
