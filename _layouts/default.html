@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGg6tLkmQhLyD9mF3VQbpD-ZIBNUpqSFEoQerwx20oe6qzJGWu-w:https://i.ytimg.com/vi/JuxjKuNh9ts/hqdefault.jpg">
+    <link rel="icon" type="image/png" href="https://avatars2.githubusercontent.com/u/42422691?s=200&v=4"><!-- This is pulled from github -->
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
@@ -26,16 +26,25 @@
           <a href="/open_source/" class="btn">Open Source</a>
           <a href="/about/" class="btn">Meet the Team</a>
 
-          <span class="btn btn-social"><a id="github" href="{{ site.github.repository_url }}"></a><a id="twitter" href="{{ site.twitter_url }}"></a><a id="facebook" href="{{ site.facebook_url }}"></a></span>
+          <span class="btn btn-social"><a id="github" href="{{ site.github_url }}"></a><a id="twitter" href="{{ site.twitter_url }}"></a><a id="facebook" href="{{ site.facebook_url }}"></a></span>
         </section>
       </div>
     </header>
 
-    <div class="container">
+    <div class="container" id="main">
       <section id="main_content">
         {{ content }}
       </section>
     </div>
+
+    <footer>
+      <div class="container">
+        <span>Arkadyax Website &copy; Arkadyax Software 2018 onwards</span><br>
+        <span>Issue with the site? Submit an <a href="https://github.com/Arkadyax/arkadyax.cf/issues/new">issue</a> or <a href="mailto:contact@arkdayax.cf">email</a> us.
+      </div>
+    </footer>
+
+
 
     {% if site.google_analytics %}
       <script>

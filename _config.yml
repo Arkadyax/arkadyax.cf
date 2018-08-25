@@ -14,6 +14,7 @@ collections:
     output: true
     permalink: /:collection/:name
 
+github_url: https://github.com/Arkadyax
 facebook_url: https://www.facebook.com/arkadyaxsw
 twitter_url: https://twitter.com/arkadyax
 

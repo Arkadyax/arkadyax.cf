@@ -1,15 +1,55 @@
 ---
----
+--- 
 
 @import "{{ site.theme }}";
 @import "profile_card";
+
+$footer-height: 70px;
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    min-height: 100vh !important;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1::before {
+    // remove './' from begginning
+    content: "";
+    display: none;
+}
+
 .container {
     max-width: 1600px;
+
+    #main_content {
+        padding-bottom: $footer-height;
+    }
+}
+
+footer {
+    padding: 10px;
+    border-top: 1px dashed #b5e853;
+
+    width: 100%;
+    height: $footer-height;
+
+    position: absolute;
+    bottom: 0;
+
+    color: #666;
 }
 
 a.nostyle {
@@ -17,31 +57,29 @@ a.nostyle {
     color: inherit;
 }
 
+.btn {
+    margin-bottom: 4px !important;
+}
+
 .btn-social {
     float: right;
     padding: 8px;
-
     * {
         width: 24px;
         height: 24px;
         margin: 1px 4px;
         float: left;
-
         opacity: 0.7;
         background: no-repeat;
         background-size: 24px;
     }
-
     #github {
         background-image: url("../images/github_mark.png");
     }
-
     #facebook {
         background-image: url("../images/facebook_logo.svg");
     }
-
     #twitter {
         background-image: url("../images/twitter_logo.svg");
     }
 }
-
