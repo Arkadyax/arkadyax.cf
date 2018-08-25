@@ -16,3 +16,32 @@ a.nostyle {
     text-decoration: none;
     color: inherit;
 }
+
+.btn-social {
+    float: right;
+    padding: 8px;
+
+    * {
+        width: 24px;
+        height: 24px;
+        margin: 1px 4px;
+        float: left;
+
+        opacity: 0.7;
+        background: no-repeat;
+        background-size: 24px;
+    }
+
+    #github {
+        background-image: url("../images/github_mark.png");
+    }
+
+    #facebook {
+        background-image: url("../images/facebook_logo.svg");
+    }
+
+    #twitter {
+        background-image: url("../images/twitter_logo.svg");
+    }
+}
+

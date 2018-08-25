@@ -13,18 +13,10 @@ collections:
   open_source_projects:
     output: true
     permalink: /:collection/:name
-  search us:
-    output: true
-    permalink: /:collection/:name
-  search:
-    output: true
-    permalink: /:collection/:name
-  code of the month:
-    output: true
-    permalink: /:collection/:name
-  game of the month:
-    output: true
-    permalink: /:collection/:name
+
+facebook_url: https://www.facebook.com/arkadyaxsw
+twitter_url: https://twitter.com/arkadyax
+
 defaults:
   - scope:
       path: ""
