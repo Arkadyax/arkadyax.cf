@@ -1,0 +1,109 @@
+section#products {
+  #title {
+    display: inline;
+  }
+
+  #store-links {
+    float: none;
+    display: block;
+
+    @include smallup() {
+      float: right;
+      display: inline;
+    }
+  }
+
+  .product {
+    width: 100%;
+
+    display: grid;
+    display: -ms-grid;
+
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name  description description description"
+    "price description description description"
+    "download sourcecode docs demo";
+
+    @include smallup() {
+      grid-template-columns: 20% 1fr 10% 15% 15%;
+      grid-template-areas: 
+      "name description price download sourcecode"
+      "tags description price docs     demo";
+    }
+
+    #name {
+      grid-area: name;
+
+      font-size: 1.2em;
+      font-weight: bold;
+
+      #version {
+        font-size: 0.8em;
+        color: #666;
+      }
+    }
+
+    #description {
+      grid-area: description;
+    }
+
+    #tags {
+      grid-area: tags;
+
+      display: none; // Mobile first
+      @include smallup() {
+        display: inline;
+      }
+    }
+
+    #price {
+      grid-area: price;
+      align-self: center;
+    }
+
+
+    .url {
+      display: inline-block;
+
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+
+      color: inherit;
+      font-size: 0.9em;
+      text-decoration: none;
+      text-shadow: none;
+
+      width: 90%;
+
+      @extend %button;
+
+      &:hover {
+        @extend %button-hover;
+      }
+
+      &[href=""] {
+        @extend %button-disabled;
+      }
+
+      &#download {
+        grid-area: download;
+      }
+  
+      &#sourcecode {
+        grid-area: sourcecode;
+      }
+  
+      &#docs {
+        grid-area: docs;
+      }
+  
+      &#demo {
+        grid-area: demo;
+      }
+    }
+  }
+}

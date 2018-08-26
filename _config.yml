@@ -11,6 +11,8 @@ collections: # These are things that are a group of associated items, like all t
     output: false # Dont render as webpages, we only want to store the data
     permalink: /:collection/:name
 
+collections_dir: _collections
+
 github_url: https://github.com/Arkadyax
 facebook_url: https://www.facebook.com/arkadyaxsw
 twitter_url: https://twitter.com/arkadyax

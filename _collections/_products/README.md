@@ -4,14 +4,14 @@
 Each product should be in its own markdown file, named with underscores. E.g the project `Nice Juicy Software` should be named `nide_juicy_software.md`. Please use the whole name to avoid ambiguity.
 
 ## Adding details
-The details for each product should be in the [YAML front matter](https://jekyllrb.com/docs/frontmatter/) of the file, and there should be no content out side of it, since this is not used. Markdown may be used.
+The details for each product should be in the [YAML front matter](https://jekyllrb.com/docs/frontmatter/) of the file, and there should be no content out side of it, since this is not used.
 
 All details should be specified in the order below.
 
 | Variable | Description | Use case |
 |----------|-------------|------------|
 | `name` | The name of the procuct | **ALWAYS** |
-| `description`   | A short, one line description of the prodcuct | **ALWAYS** |
+| `description`   | A short, one line description of the prodcuct. Markdown is supported in this field. | **ALWAYS** |
 | `date` | The date of the release of the most recent versions of the product, in the format `YYYY-MM-DD`| **ALWAYS** |
 | `version` | The version of the product. Ideally should be a [semantic version](https://semver.org/), but if your product already has a system stick to that | **ALWAYS** |
 | `tags` | Tags describing the product, in a comma seperated list, e.g `tags: [tool, shell, python]`. See [tags list](#tags) below. | RECCOMENDED |

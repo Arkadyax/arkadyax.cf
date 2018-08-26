@@ -7,4 +7,5 @@ tags: [tool, language, vm, lang-python, lcns-mit]
 opensource: true
 download: https://github.com/HappyFakeBoulder/HFBTML/archive/v1.0.zip
 sourcecode: https://github.com/HappyFakeBoulder/HFBTML/
+docs: https://github.com/HappyFakeBoulder/HFBTML/wiki
 ---

@@ -1,6 +1,6 @@
 ---
 name: StackLang
-description: A stack-based semi-minimal programming language.
+description: A stack-based minimalist programming language.
 date: 2018-07-10
 version: v1.0
 tags: [language, lang-python, lcns-mit]

@@ -2,6 +2,8 @@
 --- 
 
 @import "{{ site.theme }}";
+@import "components";
+@import "products";
 @import "profile_card";
 
 $footer-height: 70px;
@@ -59,11 +61,16 @@ a.nostyle {
 
 .btn {
     margin-bottom: 4px !important;
+
+    @extend %button;
+    &:hover {
+        @extend %button-hover;
+    }
 }
 
 .btn-social {
     float: right;
-    padding: 8px;
+
     * {
         width: 24px;
         height: 24px;
