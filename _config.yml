@@ -6,13 +6,12 @@ description: Startup software company based all over the world!
 plugins:
   - jekyll-mentions
 
-collections:
-  products:
-    output: true
+collections: # These are things that are a group of associated items, like all the products or all the blog post
+  products: # Includes both open and closed source projects
+    output: false # Dont render as webpages, we only want to store the data
     permalink: /:collection/:name
-  open_source_projects:
-    output: true
-    permalink: /:collection/:name
+
+collections_dir: _collections
 
 github_url: https://github.com/Arkadyax
 facebook_url: https://www.facebook.com/arkadyaxsw

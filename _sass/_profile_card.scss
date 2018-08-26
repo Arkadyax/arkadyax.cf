@@ -6,8 +6,12 @@
     width: 100%;
     max-width: 250px;
 
-    background-color: black;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.514);
+    @extend %button;
+    // Remove the effects of %button on text, so the cards display with normal styles
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-shadow: inherit;
 
     .avatar {
         padding: 10px;
@@ -25,7 +29,7 @@
 
     .name {
         font-size: 1.3em;
-        color: $hippie-blue
+        color: $conifer
     };
 
     .role {

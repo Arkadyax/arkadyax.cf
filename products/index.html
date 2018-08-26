@@ -1,3 +1,41 @@
 ---
 title: Products Store
 ---
+<p>Interested in a product? <a href="#contact-form">Contact us</a> for orders and inquiries.</p>
+
+<section id="products">
+    <h2 id="title">All of our products:</h2>
+    <div id="store-links">
+        View products from:
+        <a href="store" class="btn">Store</a>
+        <a href="opensource" class="btn">Open Source</a>
+    </div>
+
+    {% assign products = site.products | sort: 'date' | reverse %}
+    {% for product in products %}
+        <hr>
+        <div class="product">
+            <span id="name">{{ product.name }} <span id="version">{{ product.version }}</span></span>
+            <span id="description">{{ product.description | markdownify }}</span>
+            <span id="tags">
+            {% for tag in product.tags %}
+                <span class="tag tag-{{ tag }}"></span>
+            {% endfor %}
+            </span>
+            <span id="price">
+                {% if product.opensource %}
+                    Open Source 
+                {% else %}
+                    {{product.price}}
+                {% endif %}
+            </span>
+
+            <a id="download" class="url" href="{{ product.download }}" {% unless product.download %}onlick="return false;"{% endunless %}>Download</a>
+            <a id="sourcecode" class="url" href="{{ product.sourcecode }}" {% unless product.sourcecode %}onlick="return false;"{% endunless %}>Source</a>
+            <a id="docs" class="url" href="{{ product.docs }}" {% unless product.docs %}onlick="return false;"{% endunless %}>Docs</a>
+            <a id="demo" class="url" href="{{ product.demo }}" {% unless product.demo %}onlick="return false;"{% endunless %}>Demo</a>
+
+
+        </div>
+    {% endfor %}
+    </section>
