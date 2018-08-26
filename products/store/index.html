@@ -1,0 +1,15 @@
+---
+title: Products Store
+---
+<p>Interested in a product? <a href="#contact-form">Contact us</a> for orders and inquiries.</p>
+
+<section id="products">
+    <h2 id="title">All of our products:</h2>
+    <div id="store-links">
+        View products from:
+        <a href=".." class="btn">All</a>
+        <a href="../opensource" class="btn">Open Source</a>
+    </div>
+    {% assign store_products = site.products | where:"opensource","false" %}
+    {% include product_list.html group=store_products %}
+    </section>
