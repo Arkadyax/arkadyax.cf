@@ -19,6 +19,7 @@ All details should be specified in the order below.
 | `download` | A URL pointing to a download or use link. E.g a link to a working demo on repl.it | OPTIONAL |
 | `sourcecode` | A URL pointing to the source code. Probably Github | **MUST** if `opensource: true` |
 | `docs` | A URL pointing to the products documentation | OPTIONAL |
+| `demo` | A URL pointing to a demo of the product or the URL where it can be used |
 | `price` | The price in USD, followed by a space followed by `USD`. Can specify other details as well, like `4.50 USD per month`. | If a paid product AND `opensource: false` |
 
 # Tags
@@ -31,6 +32,8 @@ To request new tags be created please contact @IbraheemR, or email oban@arkadyax
 | `tool` | Tools |
 | `language` | Programming languages |
 | `elanguage` | [Esoteric Programming languages](https://en.wikipedia.org/wiki/Esoteric_programming_language). Do not use `language` at the same time |
+| `bot` | Bots |
+| `editor` | Text or other media editors |
 | `vm` | Virtual machines and hardware simulators |
 | `compiler` | Programming language compilers |
 | `executor` | Compiled language/bytecode runners and executors |
