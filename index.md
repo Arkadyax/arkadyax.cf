@@ -3,4 +3,4 @@ title: home
 ---
 
 # Arkadyax Software
-### New Website Coming Soon!
+### "Software that can't be beat"
