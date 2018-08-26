@@ -1,3 +1,11 @@
 ---
 title: Products Store
 ---
+
+Interested in a product? <a href="#contact-form">Contact us</a> for orders and inquiries
+
+<div id="products">
+    {% for product in products %}
+        <span id="name">{{ product.name }}</span>
+    {% endfor %}
+</div>
