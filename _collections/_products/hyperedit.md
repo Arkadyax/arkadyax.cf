@@ -1,6 +1,7 @@
 ---
 name: HyperEdit 
-description: An online rich text editor w/ swear censoring
+description: An online rich text editor 
+w/ swear censoring
 date: 2018-07-01
 version: v1.0
 tags: [tool, editor, lang-html, lang-javascript, lcns-mit]
