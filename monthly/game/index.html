@@ -2,9 +2,6 @@
 title: Game Of The Month
 ---
 
- {% assign monthly_game = site.monthly | where:"august","true" %}
- {% include monthly_code.html group=monthly_game %}
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -182,3 +179,6 @@ title: Game Of The Month
         </script>
     </body>
 </html>
+
+{% assign monthly_game = site.monthly | where:"august","true" %}
+{% include monthly_code.html group=monthly_game %}
