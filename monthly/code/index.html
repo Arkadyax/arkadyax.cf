@@ -2,10 +2,6 @@
 title: Code Of The Month
 ---
 
-{% assign monthly_code = site.monthly | where:"august","true" %}
-{% include monthly_code.html group=monthly_code %}
-
-
 <html>
     <head>
         <style>
@@ -134,3 +130,7 @@ title: Code Of The Month
         </script>
     </body>
 </html>
+
+{% assign monthly_code = site.monthly | where:"august","true" %}
+{% include monthly_code.html group=monthly_code %}
+
