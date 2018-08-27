@@ -6,5 +6,5 @@ version: v1.0
 tags: [tool, editor, lang-html, lang-javascript, lcns-mit]
 opensource: true
 sourcecode: https://repl.it/@replitcode/HyperEdit-Rich-Text-Editor
-demo: https://github.com/HappyFakeBoulder/HFBTML/archive/v1.0.zip
+demo: https://hyperedit-rich-text-editor--replitcode.repl.co/
 ---
