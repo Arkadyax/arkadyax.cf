@@ -1,7 +1,7 @@
 ---
 name: NOOBLANG
 description: An esoteric language for n00bs who hate symbols
-tags: elanguage
+tags: [elanguage]
 date: 2018-08-28
 version: v2.0
 opensource: true
