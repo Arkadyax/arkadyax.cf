@@ -90,3 +90,16 @@ a.nostyle {
         background-image: url("../images/twitter_logo.svg");
     }
 }
+
+
+.half-box {
+    width: 49%;
+  
+    display: inline-block;
+
+    overflow-x: hidden;
+  
+    @include small {
+      width: 100%;
+    }
+  }

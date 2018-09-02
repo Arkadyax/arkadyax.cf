@@ -1,0 +1,168 @@
+<button id="breakout-start-button">START/RESTART</button><br/>
+<canvas id="breakout-canvas" width="300" height="300">
+    
+</canvas>
+
+<script>
+//Set the game style by changing the options here
+    var gameStyle =  {
+            ballColor : '#242424',
+            bricksColor : ['#1F6900','#00503C','#7B2E00','#730014', '#858100'],
+            gameBG : 'linear-gradient(to top, #A4A3A3, #FFFFFF)',
+            paddleColor : '#313030'
+    }
+    var intervalId;//interval reference
+    var x, y ;//Set the starting point
+    var ballSz = 10;//Set the size of the ball
+    
+    //Set the starting direction
+    var dx = 1.50;
+    var dy = 1.50;
+    
+    var padX , padH , padW, padY, goRight= false, goLeft=false;
+    var canvas = document.getElementById('breakout-canvas'), ctx;
+    var canvasWidth = canvas.width, canvasHeight = canvas.height;//Get the width and height of Canvas
+    
+    var cols, rows, brickWidth, brickHeight, brickPadding, arrBricks = [];
+    var brickHP, brickWP, rowIndex, colIndex;
+    
+    function start(){//Initialize the animation
+        ctx = canvas.getContext('2d');
+        clearInterval(intervalId);
+        
+        intervalId = setInterval(moveBall,10);
+        x =35 + (Math.random() * (canvasWidth-45));
+        y = 140;
+                    
+    }
+    //Paddle position, width and height, enabling position with keydown and keypress event by boolean values of goRight and goLeft
+    
+    function bricks(){
+        cols = 5; rows = 5;
+        brickWidth = (canvasWidth / 5) - 1;
+        brickHeight = 15;
+        brickPadding = 1;
+        
+        for(let i = 0 ; i < rows ; i ++){
+            arrBricks[i] = new Array(cols);
+            for(let j = 0 ; j < cols ; j++){
+                arrBricks[i][j] = 1;
+            }
+        }
+    }
+    function paddle(){
+          padX = canvasWidth/2-20;
+          padH = 10;
+          padW = 50;
+          padY = canvasHeight - 15
+    }
+    var canvasPosX1, canvasPosX2;
+    function mouse(){
+        canvasPosX1 = canvas.offsetLeft;
+        canvasPosX2 = canvas.offsetLeft + canvasWidth;
+        
+    }
+    function moveBall(){
+        clear();
+        drawBall(x,y,ballSz);//draw ball
+        
+            
+            if(goRight && padX+padW < canvasWidth ) padX += 5;
+            if(goLeft && padX > 0) padX -= 5;
+            
+        //Bricks part
+        
+        for(let i = 0, POP = 0 ; i < rows ; i ++){
+            for(let j = 0 ; j < cols ; j++){
+                if(arrBricks[i][j]===0) POP++;
+                if(POP===(rows*cols)){ 
+                    clearInterval(intervalId);
+                    ctx.fillStyle="#86AC66";
+                    ctx.font = '25px Baloo Bhai';
+                    ctx.textAlign = "center";
+                    ctx.fillText('Completed!',(canvasWidth/2),(canvasHeight/2));
+                }
+                if(arrBricks[i][j]===1){
+                    ctx.fillStyle = gameStyle.bricksColor[j];
+                    rect((j*(brickWidth+brickPadding))+brickPadding,(i*(brickHeight+brickPadding))+brickPadding, brickWidth, brickHeight )
+                    
+                }
+            }
+        }
+        brickHP = brickHeight+ brickPadding;
+        brickWP = brickWidth + brickPadding;
+        rowIndex = Math.floor(y/brickHP);
+        colIndex = Math.floor(x/brickWP);
+        
+        if(y < (rows * brickHP) && rowIndex >=0 && colIndex >= 0 && arrBricks[rowIndex][colIndex ]== 1){
+            
+            dy = -dy;
+            arrBricks[rowIndex][colIndex] =0; 
+        }
+        ctx.fillStyle = gameStyle.paddleColor;
+        rect(padX, padY, padW, padH)//draw paddle with given coords and size
+        if(x+dx+ballSz>canvasWidth  || x+dx-ballSz < 0)
+            dx = -dx;
+        if(y+dy-ballSz < 0)
+            dy = -dy;
+        else if( y+dy+ballSz > padY+5){//
+            
+            if(x > padX-5 && x < padX+padW+5)
+                dy = -dy;
+            else setTimeout(function(){clearInterval(intervalId);},100)
+            
+        }
+            
+        x += dx;
+        y += dy;
+    }
+    function drawBall(x,y,r){
+        ctx.beginPath();
+        ctx.fillStyle = gameStyle.ballColor;
+        ctx.arc(x,y,r,0,Math.PI*2,true);
+        ctx.closePath();
+        ctx.fill();
+        
+    }
+    function clear(){
+        ctx.clearRect(0,0,300,300);
+    }
+    
+    //draw the paddle
+    function rect(x,y,w,h){
+        ctx.beginPath();
+        
+        ctx.rect(x,y,w,h)
+        ctx.closePath();
+        ctx.fill();
+    }
+    //EVENTS
+    var startButton = document.getElementById('breakout-start-button');
+    startButton.onclick = function(){
+        start();
+        paddle();
+        mouse();
+        bricks(); 
+    }
+    document.onkeyup = function(e){
+        goLeft = false; goRight = false;
+    }
+    document.onkeydown = function(e){
+            if(e.keyCode == 65) goLeft = true
+            else if(e.keyCode == 68) goRight = true;
+    }
+    document.onmousemove = function(e){
+        if(e.pageX > canvasPosX1 && e.pageX < canvasPosX2 ){
+            padX = e.pageX - canvasPosX1;
+        }
+    }
+    document.ontouchmove = function(e){
+        if(e.touches[0].pageX > canvasPosX1 && e.touches[0].pageX < canvasPosX2 ){
+            padX = e.touches[0].pageX - canvasPosX1;
+        }
+    }
+    canvas.style.background = gameStyle.gameBG;
+    
+    
+    
+</script>
