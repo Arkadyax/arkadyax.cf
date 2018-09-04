@@ -3,7 +3,7 @@ title: Home
 ---
 
 # Welcome to Arkadyax Software !
-We're a group of coders and creatives, from all around the world, working together to make awsome software. Need a software solution? Have a look at our [open source projects](/products/open/), [products store](/products/store/) or [contact us](mailto:contact@arkadyax.cf) today.
+We're a group of coders and creatives, from all around the world, working together to make awesome software. Need a software solution? Have a look at our [open source projects](/products/open/), [products store](/products/store/) or [contact us](mailto:contact@arkadyax.cf) today.
 
 Want to find out more? [Meet the team](/about)
 
