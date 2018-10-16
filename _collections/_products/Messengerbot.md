@@ -1,6 +1,6 @@
 ---
 name: MessengerBot
-description: A bot to fill all your needs
+description: A discord bot to fill all your needs
 date: 2018-10-16
 version: 2.0
 tags: [lang-python, tool, bot]
