@@ -12,12 +12,12 @@ Want to find out more? [Meet the team](/about)
 Want to get involved? Tell us about yourself and [apply now](/apply)!
 
 
-<!-- To edit the monthly featured code, edit '_includes/featured_code.html' and '_includes/featured_game.html' -->
+<!-- To edit the monthly featured code, edit 'monthly/game/index.html' and 'monthly/code/index.html' -->
 <div class="half-box">
   <h2>This months featured code...</h2>
-  {% include featured_code.html %}
+  <iframe src="/monthly/code/index.html"></iframe>
 </div>
 <div class="half-box">
   <h2>... and featured game</h2>
-  {% include featured_game.html %}
+  <iframe src="/monthly/game/index.html"></iframe>
 </div>
