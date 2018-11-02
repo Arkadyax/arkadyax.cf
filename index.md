@@ -17,7 +17,7 @@ Want to get involved? Tell us about yourself and [apply now](/apply)!
   <h2>This months featured code...</h2>
   <iframe src="/monthly/code/index.html"></iframe>
 </div>
-<div class="half-box">
+<div>
   <h2>... and featured game</h2>
   <iframe src="/monthly/game/index.html"></iframe>
 </div>
