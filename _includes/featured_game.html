@@ -1,986 +1,849 @@
+
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US"
+xmlns:fb="http://ogp.me/ns/fb#"
+itemscope 
+itemtype="http://schema.org/Blog" 
+prefix="og: http://ogp.me/ns#" >
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US"
+xmlns:fb="http://ogp.me/ns/fb#"
+itemscope 
+itemtype="http://schema.org/Blog" 
+prefix="og: http://ogp.me/ns#" >
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US"
+xmlns:fb="http://ogp.me/ns/fb#"
+itemscope 
+itemtype="http://schema.org/Blog" 
+prefix="og: http://ogp.me/ns#" >
+<!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-  <title>WINDOWS93</title>
-
-  <meta name="description" content="hug + hack = infinity">
-  <meta name="author" content="jankenpopp, zombectro">
-  <meta http-equiv="Content-Language" content="en_US" />
-  <meta name="google" content="notranslate" />
-  <link href="/rss" rel="alternate" type="application/rss+xml" title="windows93" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.2.1" />
-
-  <link rel="stylesheet" href="/c/sys42.css?v=2.2.1">
-  <link rel="stylesheet" href="/c/sys/skins/w93.css?v=2.2.1" id="w93_skin">
-  <link rel="stylesheet" href="/sys/hotfix.css?v=2.2.1"></head>
-<body class="noscroll skin_alpha chrome" oncontextmenu="return false" ontouchstart="">
-
-<!--
-
-                                                 @@@@@@
-                                        @@@@@@@@@@@@@@@@@@@@@@@@
- @                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@    @@                       @@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     @@@    @@   @@@@   @@@@ @@@@@@ @@@@@@::::::::::::::::::::@@@@@@@
-          @@@@  @@@@@ @@@@@@ @@@@@@ @:::::::::::::::::::::::::@@@@@@@
-,,        @     @@@   @@@@@  @@  @@ ::::::::::::::::::::::::::@@@@@@@
-     ,,,           ,, @   ,, @@@@@@ ::::::::::::::::::::::::::@@@@@@@
-     ,    ,,,,  ,,,,, ,,,,,, @@@@@@ ::::::::@@::::::@@::::::::@@@@@@@
-          ,,,,  ,,,,, ,,,,,, @@@@@@ :::::::@@@@::::@@@@:::::::@@@@@@@
-,,        ,     ,,,   ,,,,,  @@  @@ :::::::@@@@::::@@@@:::::::@@@@@@@
-     ,,,           ,, ,   ,, @@@@@@ :::::::@@@@::::@@@@:::::::@@@@@@@
-     ,    ,,,,  ,,,,, ,,,,,, @@@@@@ ::::::::@@::::::@@::::::::@@@@@@@
- @        ,,,   ,,,,, ,,,,,, @@@@   ::::::::::::::::::::::::::@@@@@@@
-@@    @@        ,     ,,,      @@@@ ::@::::::::::::::::::::@::@@@@@@@
-     @@@    @@   @@@@   @@@@ @@@@@@ :::@::::::::::::::::::@:::@@@@@@@
-          @@@@  @@@@@ @@@@@@ @@@@@@ ::::@@::::::::::::::@@::::@@@@@@@
-,,        @     @@@   @@@@@  @@  @@ ::::::@@::::::::::@@::::::@@@@@@@
-     ,,,           ,, @   ,, @@@@@@ :::::::::@@@@@@@@:::::::::@@@@@@@
-     ,    ,,,,  ,,,,, ,,,,,, @@@@@@ ::::::::::::::::::::::::::@@@@@@@
- ,        ,,,   ,,,,, ,,,,,, @@@@   ::::::::::::::::::::::::::@@@@@@@
-,,    ,,        ,     ,,,      @@@@ ::::::::::::::::::::::::::@@@@@@@
-     ,,,    ,,   ,,,,   ,,,, @@@@@@ ::::::@@@@@@@@@@@@@@@@@@@:@@@@@@@
-          ,,,,  ,,,,, ,,,,,, @@@@@@ :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@        ,     ,,,   ,,,,,  @@  @@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     @@@           @@ ,   @@ @@@@@@ @@@@@@@@@              @@@@@@@@@@
-     @    @@@@  @@@@@ @@@@@@ @@@@@@ @@                           @@@@
-          @@@   @@@@@ @@@@@@ @@@@
-                @     @@@
--->
-
-<div class="_ui_layout bbb" id="s42_screen">
-  <div id="fxinvert">
-  <div id="fxacid1">
-  <div id="fx1"><div id="fx2"><div id="fx3"><div id="fx4"><div id="fx5"><div id="fx6"><div id="fx7"><div id="fx8"><div id="fx9"><div id="fx10"><div id="fx11"><div id="fx12"><div id="fxacid2">
-
-  <div id="nofx" class="ui_layout">
-    <div class="fillspace skin_background" id="s42_background"></div>
-    <section id="s42_desktop" class="noscroll invisible" touch-action="none"></section>
-    <div class="fillspace" id="s42_canvas"></div>
-
-    <div id="s42_splashscreen" class="fillspace ui_terminal noscroll" style="white-space:normal;">
-      <div class="fillspace pa10" id="s42_bios">
-        <div>Mozilla/5.0 (X11; CrOS x86_64 10575.58.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</div>
-        <div><script>document.write((new Date).toString())</script></div>
-
-        <div>&nbsp;</div>
-        <div><script>
-          for (var key in window.location) {
-            if (typeof window.location[key] === 'string') {
-              document.write(key + ': ' + window.location[key] + '<br>');
-            }
-          }
-        </script></div>
-        <div><script>
-          if (window.navigator && window.navigator.plugins) {
-            window.navigator.plugins.refresh(false);
-            var numPlugins = window.navigator.plugins.length;
-            for (var i = 0; i < numPlugins; i++) {
-              var plugin = window.navigator.plugins[i];
-              if (plugin) {
-                document.write(plugin.name + '<br>');
-              }
-            }
-          }
-        </script></div>
-        
-        <div class="delay1" id="BIOSERROR" style="white-space:pre-wrap">
-  BIOS ROM checksum error<noscript>
-  You need JavaScript to run Windows93</noscript></div>
-        <div class="delay0" id="BOOTLOG" style="white-space:pre;margin-bottom:1em"></div>
-        <div class="delay2" id="TOOLONG">BOOT IS TAKING TOO LONG ?</div>
-        <a class="delay2" id="REINSTALL" href="/">> CLICK TO REPAIR BOOT</a><br>
-        <blink>_</blink>
-        <div>&nbsp;</div>
-        <div id="pressDel">Press <b>DEL</b> to enter SETUP<div>&nbsp;</div></div>
-      </div>
-    </div>
-
-    <footer class="pa0 relative">
-      <div class="ui_combo_one skin_base skin_outset_deep hide" id="s42_taskbar">
-        <button type="button" id="s42_start"><img width="16" heigth="16" src="c/sys/skins/w93/16/start.png"><span><b>Start</b></span></button>
-        <div id="s42_dock" class="ui_combo_one__main ui_window_dock"></div>
-        <div id="s42_notif" class="skin_inset">
-          <a id="s42_feed" target="_blank" href="/rss"><img src="c/sys/skins/w93/16/rss.png" alt="rss"></a>
-          <span id="s42_clock"></span>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  </div></div></div></div></div></div></div></div></div></div></div></div></div>
-  </div>
-  </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes">
+<title>Virtual Piano | The Original Best Piano App Online</title>
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://virtualpiano.net/xmlrpc.php">
+<link rel="shortcut icon" href="https://virtualpiano.net/wp-content/themes/twentyfourteen-child/favicon.ico">
+<meta name="google-site-verification" content="7FBxm4Ag8RA8rBzHk5kfL1jooHk7ttbsVZWE2v72zDs"/>
+<!--<![TWITTER CARDS INTEGRATION]-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bestpiano">
+<meta name="twitter:title" content="Virtual Piano">
+<meta name="twitter:description"
+content=" Virtual Piano enables you to innovate and entertain with music. To empower you to experience the piano online!">
+<meta name="twitter:creator" content="@CMAGICS">
+<meta name="twitter:image:src"
+content="https://virtualpiano.net/wp-content/uploads/2014/08/Virtual_Piano_Global_Community.jpg">
+<meta name="twitter:domain" content="virtualpiano.net">
+<meta name="twitter:app:name:iphone" content="">
+<meta name="twitter:app:name:ipad" content="">
+<meta name="twitter:app:name:googleplay" content="">
+<meta name="twitter:app:url:iphone" content="">
+<meta name="twitter:app:url:ipad" content="">
+<meta name="twitter:app:url:googleplay" content="">
+<meta name="twitter:app:id:iphone" content="">
+<meta name="twitter:app:id:ipad" content="">
+<meta name="twitter:app:id:googleplay" content="">
+<!--<![TWITTER CARDS INTEGRATION ENDS]-->
+<!--<![GOOGLE+ INTEGRATION]-->
+<link href="https://plus.google.com/110498055526373404220" rel="publisher"/>
+<script type="text/javascript" async defer
+src="https://apis.google.com/js/platform.js?publisherid=110498055526373404220">
+</script>
+<!--<![GOOGLE+ INTEGRATION ENDS]-->
+<!--[if lt IE 9]>
+<script src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen/js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://virtualpiano.net/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://virtualpiano.net/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://virtualpiano.net/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 1, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}</script>			<style type="text/css">
+.heateor_sss_horizontal_sharing .heateorSssSharing{
+color: #fff;
+border-width: 0px;
+border-style: solid;
+border-color: transparent;
+}
+.heateor_sss_horizontal_sharing .heateorSssTCBackground{
+color:#666;
+}
+.heateor_sss_horizontal_sharing .heateorSssSharing:hover{
+border-color: transparent;
+}
+.heateor_sss_vertical_sharing .heateorSssSharing{
+color: #fff;
+border-width: 0px;
+border-style: solid;
+border-color: transparent;
+}
+.heateor_sss_vertical_sharing .heateorSssTCBackground{
+color:#666;
+}
+.heateor_sss_vertical_sharing .heateorSssSharing:hover{
+border-color: transparent;
+}
+</style>
+<!-- All in One SEO Pack 2.3.14.2 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="publisher" href="https://plus.google.com/+virtualpianonet" />
+<meta name="description"  content="Virtual Piano enables you to experience the piano on your computer - online! It empowers you to innovate and entertain with music. Prepare to experience the" />
+<meta name="keywords"  content="virtual piano, online keyboard, online piano, piano, music, online music, play piano" />
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "WebSite",        "potentialAction": {
+"@type": "SearchAction",
+"target": "https://virtualpiano.net/?s={search_term}",
+"query-input": "required name=search_term"
+},		  "url": "https://virtualpiano.net/"
+}
+</script>
+<link rel="canonical" href="https://virtualpiano.net/" />
+<meta property="og:title" content="Virtual Piano" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="https://virtualpiano.net/" />
+<meta property="og:image" content="https://virtualpiano.net/wp-content/uploads/2016/04/VirtualPiano.jpg" />
+<meta property="og:site_name" content="Virtual Piano" />
+<meta property="og:description" content="The Original Piano App | Virtual Keyboard | Online Music | Piano Game | CMAGICS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@bestpiano" />
+<meta name="twitter:domain" content="https://virtualpiano.net" />
+<meta name="twitter:title" content="Virtual Piano" />
+<meta name="twitter:description" content="The Original Piano App | Virtual Keyboard | Online Music | Piano Game | CMAGICS" />
+<meta name="twitter:image" content="https://virtualpiano.net/wp-content/uploads/2016/04/VirtualPiano.jpg" />
+<meta itemprop="image" content="https://virtualpiano.net/wp-content/uploads/2016/04/VirtualPiano.jpg" />
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "Virtual Piano",
+"url" : "https://virtualpiano.net",
+"sameAs" : ["https://www.facebook.com/VirtualPiano","https://twitter.com/bestpiano","https://plus.google.com/+virtualpianonet","https://www.youtube.com/user/cmagicspiano"] 
+}
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-9224560-2', { 'cookieDomain': 'virtualpiano.net','allowLinker': true } );
+ga('require', 'displayfeatures');
+ga('require', 'linker');
+ga('linker:autoLink', ['bestonlinepiano.com', 'bestonlinepiano.co.uk', 'virtualpiano.co', 'bestpiano.co.uk'] );
+ga('send', 'pageview');
+</script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Virtual Piano &raquo; Feed" href="https://virtualpiano.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Virtual Piano &raquo; Comments Feed" href="https://virtualpiano.net/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https://vpzone-xfojsycixf.netdna-ssl.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='twentyfourteen-jetpack-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/jetpack/modules/theme-tools/compat/twentyfourteen.css?ver=4.3.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='cookielawinfo-style-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='testimonial-rotator-style-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/testimonial-rotator/testimonial-rotator-style.css?ver=4.8.7' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/457bfcfc37eb37dabc0fe11d228128c9/1538224428index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css?ver=4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='genericons-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='twentyfourteen-style-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style.css?ver=4.8.7' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/d5b2b9b5edec0ad09c47086d2ec837e2/1538224428index.css" media="all"/>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<!-- <link rel='stylesheet' id='heateor_sss_frontend_css-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.1.6' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='heateor_sss_sharing_default_svg-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/sassy-social-share/public/../admin/css/sassy-social-share-svg.css?ver=3.1.6' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='tablepress-default-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/tablepress-combined.min.css?ver=5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.2' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/56d85bb087419a6cab640146550d4f78/1538224428index.css" media="all"/>
+<script>
+if (document.location.protocol != "https:") {
+document.location = document.URL.replace(/^http:/i, "https:");
+}
+</script>
+<script src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/5d32815e88a1b0f81de2904fd631d5c9/1538224428index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script> -->
+<!-- <script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/testimonial-rotator/js/jquery.cycletwo.js?ver=4.8.7'></script> -->
+<!-- <script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/testimonial-rotator/js/jquery.cycletwo.addons.js?ver=4.8.7'></script> -->
+<link rel='https://api.w.org/' href='https://virtualpiano.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://virtualpiano.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://virtualpiano.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.7" />
+<link rel='shortlink' href='https://wp.me/P4Vt5h-x' />
+<link rel="alternate" type="application/json+oembed" href="https://virtualpiano.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvirtualpiano.net%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://virtualpiano.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvirtualpiano.net%2F&#038;format=xml" />
+<meta property="fb:app_id" content="123858854427503"/>    <style>@media screen and (min-width: 783px){.primary-navigation{float: left;margin-left: 20px;}a { transition: all .5s ease; }}</style>
+<style>.site {margin: 0 auto;max-width: 1400px;width: 100%;}.site-header{max-width: 1400px;}
+@media screen and (min-width: 1110px) {.archive-header,.comments-area,.image-navigation,.page-header,.page-content,.post-navigation,.site-content .entry-header,
+.site-content .entry-content,.site-content .entry-summary,.site-content footer.entry-meta{padding-left: 55px;}}</style>
+<style>
+.site-content .entry-header,.site-content .entry-content,.site-content .entry-summary,.site-content .entry-meta,.page-content 
+{max-width: 874px;}.comments-area{max-width: 874px;}.post-navigation, .image-navigation{max-width: 874px;}</style>
+<style>.content-area{padding-top: 28px;}.content-sidebar{padding-top: 28px;}
+@media screen and (min-width: 846px) {.content-area,.content-sidebar{padding-top: 28px;}}</style>
+<style>.content-sidebar .widget .widget-title{border-top: 0;}</style>
+<style>@media screen and (min-width: 594px) {.site-content .has-post-thumbnail .entry-header{margin-top: -25px !important;}}
+@media screen and (min-width: 846px) {.site-content .has-post-thumbnail .entry-header {margin-top: -25px !important;}}
+@media screen and (min-width: 1040px) {.site-content .has-post-thumbnail .entry-header{margin-top: -25px !important;}}
+</style>
+<style>.site:before,#secondary{width:0;display:none;}.ie8 .site:before,.ie8 #secondary{width:0px;display:none;}
+.featured-content{padding-left:0;}.site-content,.site-main .widecolumn{margin-left:0;}.ie8 .site-content,.ie8 .site-main .widecolumn{margin-left:0;}
+@media screen and (min-width: 1008px) {.search-box-wrapper{padding-left:0;}}
+@media screen and (min-width: 1080px) {.search-box-wrapper,.featured-content{padding-left:0;}}
+@media screen and (min-width: 1080px) {.grid-content{padding-left:0;}}
+</style>
+<style>.hentry{max-width: 1200px;}
+img.size-full,img.size-large,.wp-post-image,.post-thumbnail img,.site-content .post-thumbnail img{max-height: 600px;}
+</style>
+<style>
+.site-content .post-thumbnail{background:none;}.site-content a.post-thumbnail:hover{background-color:transparent;}
+.site-content .post-thumbnail img{width:100%;}
+</style>
+<style>
+.site-content .post-thumbnail{background:none;}.site-content a.post-thumbnail:hover{background-color:transparent;}
+</style>
+<style>
+.slider .featured-content .hentry{max-height: 500px;}.slider .featured-content{max-width: 1600px;
+margin: 0px auto;}.slider .featured-content .post-thumbnail img{max-width: 1600px;width: 100%;}
+.slider .featured-content .post-thumbnail{background:none;}.slider .featured-content a.post-thumbnail:hover{background-color:transparent;}
+</style>
+<style>.featured-content{display:none; visibility: hidden;}</style>
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="twentyfourteen-header-css">
+.site-title a {
+color: #ffffff;
+}
+</style>
+<!-- <link rel="stylesheet" id="custom-css-css" type="text/css" href="https://virtualpiano.net/?custom-css=1&#038;csblog=1&#038;cscache=6&#038;csrev=34" /> -->
+<link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/5279937df84179ca1bdc8f7b7a84b3fb/1538224428index.css" media="all"/>
+<!-- Styles cached and displayed inline for speed. Generated by http://stylesplugin.com -->
+<style type="text/css" id="styles-plugin-css">
+@import '//fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic';.styles #page #masthead{background:#212121 url()}.styles #page .site-title{font-size:12px}.styles #page .site-title a{color:#fff!important}.styles #page .site-title a:hover{color:#f48413!important}.styles #masthead .primary-navigation li a,.styles #masthead .primary-navigation li > a{font-size:12px}.styles .content-sidebar .widget-title{font-size:14px}.styles .content-sidebar .widget{font-size:12px}.styles .footer-sidebar .widget-title,.styles .widget_calendar caption{font-size:20px;font-family:Roboto;color:#fcfcfc}.styles .footer-sidebar .widget,.styles footer-sidebar .widget ul li,.styles footer-sidebar .widget a{font-size:12px;font-family:Verdana, Tahoma, sans-serif}.styles .footer-sidebar .widget,.styles footer-sidebar .widget ul li{color:#d3d3d3}.styles .site-footer{background-color:#212121}.styles #page .site-info a{font-size:11px;font-family:'Century Gothic', Helvetica, Arial, sans-serif}
+</style>
+</head>
+<body data-rsssl=1 class="home page-template page-template-page-templates page-template-vp-html5 page-template-page-templatesvp-html5-php page page-id-33 styles masthead-fixed footer-widgets slider">
+<!--<![VIRTUAL PIANO ANALYTICS]-->
+<script>
+(function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments)
+}, i[r].l = 1 * new Date();
+a = s.createElement(o),
+m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-9224560-2', 'auto');
+ga('send', 'pageview');
+</script>
+<!--<![END VIRTUAL PIANO ANALYTICS]-->
+<!--<![HEADER BIDDING START]-->
+<script>
+//<![CDATA[
+"use strict";
+function r(e) {
+/in/.test(document.readyState) ? setTimeout("r(" + e + ")", 9) : e()
+}
+function initAdserver() {
+pbjs.initAdserverSet || (googletag.cmd.push(function () {
+pbjs.que.push(function () {
+pbjs.setTargetingForGPTAsync(), googletag.pubads().refresh()
+})
+}), pbjs.initAdserverSet = !0)
+}
+var browserWidth = window.innerWidth && document.documentElement.clientWidth ? Math.min(window.innerWidth, document.documentElement.clientWidth) : window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName("body")[0].clientWidth,
+desktopUnits = [{
+code: "div-gpt-top-leaderboard",
+bids: [{bidder: "sovrn", params: {tagid: 499231}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "1bb7bfbe82ae4a4ba9545dd984981515"}
+}],
+sizes: [[728, 90]]
+}, {
+code: "div-gpt-left-sidebar",
+bids: [{bidder: "sovrn", params: {tagid: 499232}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "c3bc4dc21d3a4933bdb30ea2ae5ecb2e"}
+}],
+sizes: [[160, 600]]
+}, {
+code: "div-gpt-right-sidebar",
+bids: [{bidder: "sovrn", params: {tagid: 499233}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "f79e846bba79c58c6b999584af61c3f9"}
+}],
+sizes: [[160, 600]]
+}, {
+code: "div-gpt-cross-site-leaderboard",
+bids: [{bidder: "sovrn", params: {tagid: 499227}}],
+sizes: [[728, 90]]
+}, {
+code: "div-gpt-cross-site-left",
+bids: [{bidder: "sovrn", params: {tagid: 513791}}],
+sizes: [[300, 250]]
+}, {
+code: "div-gpt-cross-site-center",
+bids: [{bidder: "sovrn", params: {tagid: 499225}}],
+sizes: [[300, 250]]
+}, {code: "div-gpt-cross-site-right", bids: [{bidder: "sovrn", params: {tagid: 499226}}], sizes: [[300, 250]]}],
+mobileUnits = [{
+code: "div-gpt-top-leaderboard",
+bids: [{bidder: "sovrn", params: {tagid: 503566}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "0faaeb2ffd9d1199bca86e6aeba45d09"}
+}],
+sizes: [[320, 50]]
+}, {
+code: "div-gpt-left-sidebar",
+bids: [{bidder: "sovrn", params: {tagid: 499224}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "c3bc4dc21d3a4933bdb30ea2ae5ecb2e"}
+}],
+sizes: [[300, 250]]
+}, {
+code: "div-gpt-right-sidebar",
+bids: [{bidder: "sovrn", params: {tagid: 499230}}, {
+bidder: "komoona",
+params: {hbid: "790cb2f06dc84c648012061efa6c8428", placementId: "ce5b2ce7c903c073f886bcb65603cd45"}
+}],
+sizes: [[300, 250]]
+}, {
+code: "div-gpt-cross-site-leaderboard",
+bids: [{bidder: "sovrn", params: {tagid: 499227}}],
+sizes: [[728, 90]]
+}, {
+code: "div-gpt-cross-site-left",
+bids: [{bidder: "sovrn", params: {tagid: 513791}}],
+sizes: [[300, 250]]
+}, {
+code: "div-gpt-cross-site-center",
+bids: [{bidder: "sovrn", params: {tagid: 499225}}],
+sizes: [[300, 250]]
+}, {code: "div-gpt-cross-site-right", bids: [{bidder: "sovrn", params: {tagid: 499226}}], sizes: [[300, 250]]}],
+PREBID_TIMEOUT = 700;
+window.log = function () {
+window.log.history = window.log.history || [], window.log.history.push(arguments), this.console && console.log(Array.prototype.slice.call(arguments))
+};
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [], function () {
+var e = document, d = e.createElement("script");
+e.location.protocol, d.type = "text/javascript", d.src = "https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/prebid.js";
+var t = document.getElementsByTagName("head")[0];
+t.insertBefore(d, t.firstChild)
+}(), googletag.cmd.push(function () {
+googletag.pubads().disableInitialLoad()
+}), pbjs.que.push(function () {
+pbjs.addAdUnits(768 > browserWidth ? mobileUnits : desktopUnits), pbjs.requestBids({
+bidsBackHandler: function (e) {
+initAdserver()
+}
+}), pbjs.bidderSettings = {
+standard: {
+adserverTargeting: [{
+key: "hb_bidder", val: function (e) {
+return e.bidderCode
+}
+}, {
+key: "hb_adid", val: function (e) {
+return e.adId
+}
+}, {
+key: "hb_pb", val: function (e) {
+return e.pbHg
+}
+}]
+}
+}
+}), setTimeout(initAdserver, PREBID_TIMEOUT), function () {
+var e = document.createElement("script");
+e.async = !0, e.type = "text/javascript";
+var d = "https:" == document.location.protocol;
+e.src = (d ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+var t = document.getElementsByTagName("script")[0];
+t.parentNode.insertBefore(e, t)
+}(), googletag.cmd.push(function () {
+var e = googletag.sizeMapping().addSize([768, 0], [[728, 90]]).addSize([0, 0], [[320, 50]]).build(),
+d = googletag.sizeMapping().addSize([768, 1], [[160, 600]]).addSize([0, 0], [[300, 250]]).build();
+googletag.defineSlot("153083731/leaderboard-top", [[728, 90], [320, 50]], "div-gpt-top-leaderboard").addService(googletag.pubads()).defineSizeMapping(e), googletag.defineSlot("153083731/left-sidebar", [[160, 600], [300, 250]], "div-gpt-left-sidebar").addService(googletag.pubads()).defineSizeMapping(d), googletag.defineSlot("153083731/right-sidebar", [[160, 600], [300, 250]], "div-gpt-right-sidebar").addService(googletag.pubads()).defineSizeMapping(d), googletag.defineSlot("153083731/cross-site-leaderboard", [[728, 90]], "div-gpt-cross-site-leaderboard").addService(googletag.pubads()), googletag.defineSlot("153083731/cross-site-left", [[300, 250], [336, 280]], "div-gpt-cross-site-left").addService(googletag.pubads()), googletag.defineSlot("153083731/cross-site-center", [[300, 250], [336, 280]], "div-gpt-cross-site-center").addService(googletag.pubads()), googletag.defineSlot("153083731/cross-site-right", [[300, 250], [336, 280]], "div-gpt-cross-site-right").addService(googletag.pubads()), googletag.pubads().enableSingleRequest(), googletag.enableServices()
+});
+//]]>
+</script>
+<!--<![HEADER BIDDING END]-->
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="header-main">
+<h1 class="site-title"><a href="https://virtualpiano.net/" rel="home"><img id="site-logo"
+src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/images/Virtual_Piano_The_Original_Music_App.png"
+alt="Virtual Piano"
+title="Virtual Piano"/></a>
+</h1>
+<div class="search-toggle">
+<a href="#search-container" class="screen-reader-text">Search</a>
 </div>
-
-<script src="/error.js?v=2.2.1"></script>
-<script type="bios" id="BIOSCRIPT">
-  ___.   .__
-  \_ |__ |__| ____  ______
-  | __ \|  |/  _ \/  ___/
-  | \_\ \  (  <_> )___ \
-  |___  /__|\____/____  > v0.2.0
-      \/              \/
-
-  You see this screen because you interrupted
-  the boot sequence or something went wrong
-  during scripts execution.
-
-  <a class="ui_log__white" href="http://v1.windows93.net">> Downgrade to Windows93 v1 </a>
-  <em>Less apps and no filesystem
-  but better support for old browsers</em>
-
-  <a class="ui_log__white" href="#" id="reinstall_windows93">> Reinstall Windows93 v2</a>
-  <em>You will loose all your saved data
-  but can repair broken boot</em>
-
-  <a class="ui_log__white" href="/#safe" id="safe_mode">> Restart in Safe Mode</a>
-  <em>Disable any script or style
-  from the /a/boot/ folder</em>
-
-  <a class="ui_log__white" href="/" id="normal_boot">> Continue normal boot</a>
-</script>
+<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+<button class="menu-toggle">Primary Menu</button>
+<a class="screen-reader-text skip-link"
+href="#content">Skip to content</a>
+<div class="menu-music-world-container"><ul id="menu-music-world" class="nav-menu"><li id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-33 current_page_item menu-item-579"><a title="Play the piano online, with your computer keyboard" href="https://virtualpiano.net/">Play</a></li>
+<li id="menu-item-578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"><a title="Music Sheets for Virtual Piano" href="https://virtualpiano.net/music-sheets/">Music Sheets</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a title="A worldwide network of bright and fun people, passionate about playing the piano" href="https://virtualpiano.net/the-world/">The World</a></li>
+<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056"><a title="Learn how to play the piano OR teach the piano" href="https://virtualpiano.net/learn-teach/">Learn / Teach</a></li>
+<li id="menu-item-1057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057"><a title="Watch videos created by Virtual Piano community" href="https://virtualpiano.net/watch/">Watch</a></li>
+<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a title="About Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/">About</a></li>
+</ul></div>            </nav>
+</div>
+<div id="search-container" class="search-box-wrapper hide">
+<div class="search-box">
+<form role="search" method="get" class="search-form" action="https://virtualpiano.net/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+</label>
+<input type="submit" class="search-submit" value="Search" />
+</form>            </div>
+</div>
+</header><!-- #masthead -->
+<div id="main" class="site-main">
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Virtual Piano</title>
+<!-- <link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/jssocials.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/jssocials-theme-flat.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/main.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/pace.css" /> -->
+<link rel="icon" type="image/x-icon" href="https://virtualpiano.net/wp-content/themes/twentyfourteen-child/style/favicon.ico" />
+<!--    These commented scripts are moved to footer.php and can be safely removed-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/pace.min.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/piano.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/notes.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/translators/translator.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/translators/retranslator.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/arm.js"></script>-->
+<!--    <script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/db/music_list.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/keyboard.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/window_fnc.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/index.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/window_dom.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/lastsession.js"></script>-->
+<!--    <script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/menuscreen.js"></script>-->
+<!--	<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/quoterotator.js"></script>-->
+<!--    <meta name="viewport" content="user-scalable = yes">-->
+</head>
+<body>
+<div id="opaca"> <!--Added 'opaca' as a container for responsiveness of the piano app-->
+<div id="piano">
+<img class="speaker1" /*src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-sterio-sound.png" */ />
+<!--src will de dynamically loaded later with full piano-->
+<img class="speaker2" /*src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-sterio-sound.png" */ />
+<!--src will de dynamically loaded later with full piano-->
+<img class="vpianologo" /*src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-html5.png" */ />
+<!--src will de dynamically loaded later with full piano-->
+<div class="madebycmagics"><a href="http://cmagics.com" target="_blank">MADE BY CRYSTAL MAGIC STUDIO</a></div>
+<div id="btns">
+<div id="Play" class="tabcontent">
+<div class="playlabel">JUST PLAY</div>
+<div class="msglabel">USE YOUR COMPUTER KEYBOARD TO PLAY ANY SONG</div>
+</div>
+<div id="Menu" class="tabcontent">
 <script>
-var $boot = {
-  BIOS: document.getElementById("s42_bios"),
-  BOOTLOG: document.getElementById("BOOTLOG"),
-  BIOSERROR: document.getElementById("BIOSERROR"),
-  TOOLONG: document.getElementById("TOOLONG"),
-  REINSTALL: document.getElementById("REINSTALL"),
-  VERSION: "2.2.1"
-};
-$boot.hasError = false;
-$boot.onerror = function(e) {
-  if ($boot.BIOSERROR && window.$error && typeof window.$error === "function") {
-    var err = $error(arguments);
-    $boot.BIOSERROR.innerHTML = "";
-    $boot.BOOTLOG.innerHTML +=
-      '\n<span class="ui_log__red">' + err.html + "<span>";
-  } else if ($boot.BIOSERROR) {
-    $boot.BIOSERROR.innerHTML = "";
-    $boot.BOOTLOG.innerHTML += '\n<span class="ui_log__red">' + e + "<span>";
-  }
-  $boot.TOOLONG.className = "hide";
-  $boot.REINSTALL.className = "";
-  $boot.hasError = true;
-  if (window.system42) window.system42.stop();
-  window.onerror = null;
-};
-window.onerror = $boot.onerror;
-document.onkeydown = function(e) {
-  if (e.code === "Delete") {
-    e.preventDefault();
-    window.biosSetup();
-  }
-};
-document.onclick = function(e) {
-  e.preventDefault();
-  window.biosSetup();
-};
-window.$boot = $boot;
-window.biosSetup = function() {
-  document.onclick = null;
-  if (window.system42) window.system42.stop();
-  $boot.BIOS.className += " bios-setup";
-  $boot.BIOS.style.whiteSpace = "pre-wrap";
-  $boot.BIOS.innerHTML = document
-    .getElementById("BIOSCRIPT")
-    .innerHTML.replace("\n", "")
-    .replace(/\n/g, "<br>");
-  document.getElementById("normal_boot").focus();
-  var actions = Array.prototype.slice.call(document.querySelectorAll("a"));
-  var current = 3;
-  document.onkeydown = function(e) {
-    if (e.code === "ArrowUp") {
-      current--;
-      if (current < 0) current = 3;
-      actions[current].focus();
-    }
-    if (e.code === "ArrowDown") {
-      current++;
-      if (current > 3) current = 0;
-      actions[current].focus();
-    }
-  };
-  document.getElementById("reinstall_windows93").onclick = function(e) {
-    e.preventDefault();
-    window.localStorage.clear();
-    window.localforage.clear(function(err) {
-      window.location.reload(true);
-    });
-  };
-  document.getElementById("safe_mode").onclick = function(e) {
-    e.preventDefault();
-    window.location.href = "#safe";
-    window.location.reload(true);
-  };
-};
+function openSheets() {
+var myWindow = window.open("https://virtualpiano.net/category/music-sheets/", "Music Sheets", "width=600,height=400");
+}
 </script>
-<script src="/c/sys42.js?v=2.2.1"></script>
-<script src="/sys/desktop.js?v=2.2.1"></script>
-<script src="/sys/upgrade.js?v=2.2.1"></script>
-<script src="/sys/apps.js?v=2.2.1"></script>
-<script src="/sys/apps/clippy.js?v=2.2.1"></script>
-<script src="/sys/apps/code.js?v=2.2.1"></script>
-<script src="/sys/apps/crazy.js?v=2.2.1"></script>
-<script src="/sys/apps/layer.js?v=2.2.1"></script>
-<script src="/sys/apps/pony.js?v=2.2.1"></script>
+<a id="musicd" class="pbuttons" onclick="openSheets()">MUSIC SHEETS</a>
+<div id="assistd" class="pbuttons" onclick="piano.assist()">KEY ASSIST OFF</div>
+<div id="sheetd" class="pbuttons" onclick="win_fnc.viewer('sheet')">AUTOPLAY</div>
+<div id="recordd" class="pbuttons" onclick="win_fnc.viewer('recorder')">RECORDER</div>
 <script>
-document.documentElement.classList.remove("no-js");
-$boot.BIOSERROR.className = "";
-$boot.BIOSERROR.innerHTML = "";
-system42.config({
-  onerror: function(e) {
-    if (!$boot.hasError) $boot.onerror(e);
-  },
-  onready: function(e) {
-    $boot.BOOTLOG.innerHTML += "\n" + e + " ... ready";
-  }
-});
-$loader.config({
-  onpass: function(e) {
-    $boot.BOOTLOG.innerHTML += "\n " + e.url.split("/").pop() + " ... ready";
-  },
-  onfail: function(e) {
-    $boot.BOOTLOG.innerHTML +=
-      '\n <span class="ui_log__red">' +
-      e.url.split("/").pop() +
-      " ... fail<span>";
-  }
+function openHowtoplay() {
+var myWindow = window.open("https://virtualpiano.net/music-sheets/how-to-play/", "How To Play", "width=700,height=600");
+}
+</script>
+<a id="worldd" class="pbuttons" onclick="openHowtoplay()">HOW TO PLAY</a>
+<div id="styled" class="pbuttons" onclick="piano.styler()">STYLES</div>
+<script>
+function openAbout() {
+var myWindow = window.open("https://virtualpiano.net/about-virtual-piano-2/", "How To Play", "width=700,height=600");
+}
+</script>
+<a id="aboutd" class="pbuttons" onclick="openAbout()">ABOUT</a>
+</div>
+<div class="tabpiano">
+<button class="tablinks" onclick="openCity(event, 'Play')" id="defaultOpen">JUST PLAY</button>
+<button class="tablinks" onclick="openCity(event, 'Menu')">MENU</button>
+</div>
+</div>
+<div id="white"></div>
+<div id="black"></div>
+<div class="slideupanim" id="noticebrd">
+<a title="Virtual Piano World Championships 2018" href="https://virtualpiano.net/virtual-piano-world-championships-2018/" target="_blank">
+<div id="Play2" class="tabcontent2" style="display: block;margin: 17px 10px 10px 10px;">
+<div class="msglabel2"><i class="fa fa-trophy" aria-hidden="true"></i> VIRTUAL PIANO WORLD CHAMPIONSHIPS 2018 <i class="fa fa-trophy" aria-hidden="true"></i></div>
+<div class="noticelabel">WINNERS ANNOUNCED!</div>
+</div>
+</a>
+</div>
+<a title="Reveal Virtual Piano World Championships 2018" href="https://virtualpiano.net/">
+<div class="slidesdown"></div>
+<div class="trophyanim"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+</a>
+<div id="audio" onerror="location.reload()"></div>
+</div>
+<div id='win'></div>
+</div> <!-- end of opaca div -->
+<div class="container">
+<div class="column-center">
+<div id="div-gpt-top-leaderboard">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-top-leaderboard');
 });
 </script>
-<script>
-!(function() {
-  "use strict";
-
-  var lastUpdate = {"title":"JANKENPOPP \u2013 NEW ALBUM!","link":"http:windows93.net\/pls","pubDate":"Sun, 01 Apr 2018 11:11:11 GMT","description":"\n\nHappy April Fool's Day 2018!!<br>\nTeh new album of Jankenpopp is out now!!\n<iframe width=\"300\" height=\"169\" src=\"https:\/\/www.youtube.com\/embed\/FG2PVD984PY?autoplay=0\" frameborder=\"0\" allowfullscreen><\/iframe><br>\n\n"};
-
-  system42(
-    {
-      _apps: {},
-      _clean: {},
-      _states: { opened: {} },
-      _sound: {},
-      _init: {},
-      _events: $watch({}),
-      _path: { key: {} },
-      _get: {
-        mime: {
-          ext: {},
-          apps: []
-        },
-        ext: {
-          mime: {},
-          apps: {}
-        }
-      },
-      _dom: {
-        taskbar: document.getElementById("s42_taskbar"),
-        desktop: document.getElementById("s42_desktop"),
-        background: document.getElementById("s42_background"),
-        screen: document.getElementById("s42_screen"),
-        splash: document.getElementById("s42_splashscreen"),
-        clock: document.getElementById("s42_clock"),
-        canvas: document.getElementById("s42_canvas")
-      },
-      _settings: {
-        // version: 1,
-        // userData: {
-        //   nick: "derp",
-        //   localInit: false,
-        //   lastVisit: new Date()
-        // },
-        // skin: "w93",
-        sounds: {
-          boot: "/c/sys/sounds/BOOT.ogg",
-          alert: "/c/sys/sounds/CHORD.ogg",
-          error: "/c/sys/sounds/QUACK.ogg"
-        },
-        noSplash: false,
-        defaultApp: {
-          html: "iframe",
-          htm: "iframe",
-          php: "iframe",
-          xml: "code",
-          svg: "img",
-          gif: "img",
-          png: "img",
-          jpeg: "img",
-          jpg: "img"
-        }
-      },
-      _schemas: {
-        shortcut: {
-          icon: {
-            type: "string",
-            plugin: {
-              icon: {
-                watch: "exe"
-              }
-            }
-          },
-          exe: {
-            title: "command",
-            type: "string",
-            placeholder: "http://",
-            attributes: {
-              autofocus: true,
-              required: true
-            },
-            plugin: {
-              explorer: {
-                accept: "*",
-                path: "/"
-              }
-            }
-          },
-          title: {
-            type: "string",
-            placeholder: "Leave blank to use same name as target"
-          }
-        }
-      },
-      _temp: {
-        files: '/files.json?v=2.2.1',
-        mimetypes: "/c/mimetypes.json",
-        splash: "/c/sys/boot/splash.html",
-        init: {}
-      },
-      _icons: {
-        w: 72,
-        h: 60
-      },
-      _keyboard: { layout: {} },
-
-      debug: false,
-      devmode: false,
-      started: false
-    },
-    function(le) {
-      window.le = le;
-
-      system42(
-        "bios",
-        [
-          "settings",
-          "modules",
-          "desktop",
-          [
-            "audio",
-            "boot",
-            "apps",
-            [
-              "utils",
-              "storage",
-              "upgrade",
-              "config",
-              "exe",
-              "explorer",
-              "start"
-            ]
-          ]
-        ],
-        "splash",
-        "reveal",
-        function(le) {
-          le.canvas = {
-            layers: [],
-            ctxs: [],
-            add: function() {
-              this.cnv = document.createElement("canvas");
-              le._dom.canvas.appendChild(this.cnv);
-              this.cnv.width = window.innerWidth;
-              this.cnv.height = window.innerHeight;
-              this.layers.push(this.cnv);
-              this.ctx = this.cnv.getContext("2d");
-              this.ctxs.push(this.ctx);
-            },
-            draw: function(img, x, y) {
-              this.ctx.drawImage(img, x, y);
-            },
-            clear: function() {
-              this.ctx.clearRect(0, 0, this.cnv.width, this.cnv.height);
-            }
-          };
-          le.canvas.add();
-
-          if (le.devmode) {
-          } else {
-            if (
-              lastUpdate &&
-              Math.round(
-                (Date.now() - Date.parse(lastUpdate.pubDate)) /
-                  (1000 * 60 * 60 * 24)
-              ) < 16
-            ) {
-              setTimeout(function() {
-                $notif(lastUpdate, document.getElementById("w93_feed"));
-              }, 0);
-            }
-          }
-
-          // cleanup
-          document.onkeydown = null;
-          document.onclick = null;
-          delete le._temp;
-          delete le.devmode;
-          delete le.started;
-          if (window.system42) window.system42.stop();
-        }
-      );
-    }
-  );
-})();
+</div>
+<br></br>
+<div id="quotebox">
+<div id="quotes">The original and most loved Virtual Piano in the world. Now upgraded!</div>
+<div id="cites">Established in 2002. Played by 19,000,000+ amazing people per year.</div>
+</div><em>Provided to you for free. Supported by sponsored advertising.</em>
+<hr>
+<p>Established in 2006, Virtual Piano is now played by more than 19 million people a year. This free to use platform enables you to play the piano through your computer keyboard, without the need to download or install an app. The best part is that
+you don’t need prior knowledge of the music notation. The Virtual Piano music sheets use plain English alphabet and simple semantics, so you can enjoy the experience of playing the piano instantly.</p>
+</div>
+<div class="column-left">
+<div id="div-gpt-left-sidebar">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-left-sidebar');
+});
 </script>
-
-<!-- SVG FX -->
-
-<svg id="svg_fx" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<defs>
-
-<filter id="fx_neon_satan" style="color-interpolation-filters:sRGB">
-  <feGaussianBlur stdDeviation="0.8" result="blur" id="feGaussianBlur4700"></feGaussianBlur>
-  <feComponentTransfer in="blur" result="component" id="feComponentTransfer4702">
-    <feFuncR type="table" tableValues="0 1 0 1 1" id="feFuncR4704"></feFuncR>
-    <feFuncG type="table" tableValues="0 0 0 1 1" id="feFuncG4706"></feFuncG>
-    <feFuncB type="table" tableValues="0 0 0 1 1" id="feFuncB4708"></feFuncB>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_neon_slug" style="color-interpolation-filters:sRGB">
-  <feGaussianBlur stdDeviation="0.8" result="blur" id="feGaussianBlur4700"></feGaussianBlur>
-  <feComponentTransfer in="blur" result="component" id="feComponentTransfer4702">
-    <feFuncR type="table" tableValues="0 1 0 1 1" id="feFuncR4704"></feFuncR>
-    <feFuncG type="table" tableValues="1 0 1 1 1" id="feFuncG4706"></feFuncG>
-    <feFuncB type="table" tableValues="-4 2 0 1 1" id="feFuncB4708"></feFuncB>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_neon_hulk" style="color-interpolation-filters:sRGB">
-  <feGaussianBlur stdDeviation="0.8" result="blur" id="feGaussianBlur4700"></feGaussianBlur>
-  <feComponentTransfer in="blur" result="component" id="feComponentTransfer4702">
-    <feFuncR type="table" tableValues="0 1 0 1 1" id="feFuncR4704"></feFuncR>
-    <feFuncG type="table" tableValues="0 1 0 1 1" id="feFuncG4706"></feFuncG>
-    <feFuncB type="table" tableValues="0 0 0 1 1" id="feFuncB4708"></feFuncB>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_displacement" >
-  <feOffset dy="21" dx="0" result="offset2"></feOffset>
-  <feDisplacementMap scale="42" in2="offset2" xChannelSelector="R"></feDisplacementMap>
-</filter>
-
-
-<filter id="fx_aqua" inkscape:menu="Image Paint and Draw" style="color-interpolation-filters:sRGB" inkscape:label="Litho" inkscape:menu-tooltip="Create a two colors lithographic effect">
-  <feGaussianBlur stdDeviation="1" in="SourceGraphic" result="result0"></feGaussianBlur>
-  <feTurbulence result="result1" numOctaves="1" seed="488" baseFrequency="0.095" type="turbulence"></feTurbulence>
-  <feComposite in="result0" in2="result1" operator="in" result="result2"></feComposite>
-
-  <feBlend mode="multiply" result="fbSourceGraphic" in2="result91"></feBlend>
-  <feColorMatrix result="fbSourceGraphicAlpha" in="fbSourceGraphic" values="0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 5 0"></feColorMatrix>
-  <feGaussianBlur result="result0" in="fbSourceGraphicAlpha" stdDeviation="3"></feGaussianBlur>
-
-  <feSpecularLighting specularExponent="30" specularConstant="1.2" surfaceScale="1" lighting-color="rgb(111,236,253)" result="result1" in="result0">
-  <fePointLight z="20000" y="-10000" x="-5000"></fePointLight>
-  </feSpecularLighting>
-  <feComposite k2="-1" operator="in" result="result2" in="result1" in2="fbSourceGraphicAlpha"></feComposite>
-  <feComposite k3="1" k2="3" operator="arithmetic" result="result4" in="fbSourceGraphic" in2="result2"></feComposite>
-  <feBlend mode="multiply" in2="result4"></feBlend>
-</filter>
-
-
-<filter id="fx_litho" inkscape:menu="Image Paint and Draw" style="color-interpolation-filters:sRGB" inkscape:label="Litho" inkscape:menu-tooltip="Create a two colors lithographic effect">
-  <feGaussianBlur stdDeviation="0.01"></feGaussianBlur>
-  <feColorMatrix result="fbSourceGraphic" in="fbSourceGraphic" values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 50 0 "></feColorMatrix>
-  <feComponentTransfer result="fbSourceGraphic" in="fbSourceGraphic">
-  <feFuncR type="discrete" tableValues="0 1 1"></feFuncR>
-  <feFuncG type="discrete" tableValues="0 1 1"></feFuncG>
-  <feFuncB type="discrete" tableValues="0 1 1"></feFuncB>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_trichrome" inkscape:menu="Color" inkscape:menu-tooltip="Like Duochrome but with three colors" inkscape:label="Trichrome" style="color-interpolation-filters:sRGB;">
-  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.07 1 0 " result="result1" />
-  <feColorMatrix result="result3" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 -1 " />
-  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.21 0.72 0.07 0 0 " in="SourceGraphic" result="result2" />
-  <feColorMatrix result="result9" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.5 -0.5 " />
-  <feMerge result="result11">
-  <feMergeNode in="result3" />
-  <feMergeNode in="result9" />
-  </feMerge>
-  <feFlood flood-opacity="1" flood-color="rgb(186,22,91)" result="result10" />
-  <feComposite in2="result11" result="result12" operator="out" />
-  <feFlood flood-opacity="1" result="result13" flood-color="rgb(1,171,171)" />
-  <feComposite in2="result3" result="result14" operator="in" />
-  <feComposite in2="result12" result="result17" k3="1" k2="1" operator="arithmetic" />
-  <feFlood flood-opacity="1" result="result15" flood-color="rgb(255,255,0)" />
-  <feComposite in2="result9" result="result16" operator="in" />
-  <feComposite in2="result17" result="result18" k3="1" k2="1" operator="arithmetic" />
-  <feComposite in2="SourceGraphic" operator="in" />
-</filter>
-<!--
-/////////////////////////////////////////////////////////////////////////////
- -->
-
-
-     <!--
-     http://electricbeach.org/?p=950
-     http://codepen.io/awgreenblatt/pen/Kdsfr
-     -->
-
- <!-- <filter id="fx_none">
- </filter> -->
-
-
-<!-- <filter id="fx_vhs2">
-  <feConvolveMatrix order="3" kernelMatrix="1 -1  1 -1 -0.01 -1 1 -1 1" edgeMode="duplicate" result="convo">
-  </feConvolveMatrix>
-</filter> -->
-
-<filter id="fx_convo">
-  <feConvolveMatrix order="3" kernelMatrix="1 -1  1 -1 -0.01 -1 1 -1 1" edgeMode="duplicate" result="convo">
-  </feConvolveMatrix>
-</filter>
-
-<filter id="fx_convo2">
-  <feConvolveMatrix order="3 3" kernelMatrix="2 -1  1 -1 -0.01 -1 1 -1 0"></feConvolveMatrix>
-</filter>
-
-<filter id="fx_convo3">
-  <feConvolveMatrix style="color-interpolation-filters:sRGB" order="3" kernelMatrix="0 -0.9 0   -1 4 -1   0 -1 0" preserveAlpha="true"></feConvolveMatrix>
-</filter>
-
-<filter id="fx_convo4">
-  <feConvolveMatrix style="color-interpolation-filters:sRGB" order="3" kernelMatrix="0 -1 0   -1 4 -1   0 -1.1 0" preserveAlpha="true"></feConvolveMatrix>
-</filter>
-
-<filter id="fx_convoblur">
-  <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
-  <feConvolveMatrix order="3" kernelMatrix="1 -1  1 -1 -0.01 -1 1 -1 1" edgeMode="none" result="convo"/>
-  <feMerge>
-  <feMergeNode in="blur"/>
-  <feMergeNode in="convo"/>
-  </feMerge>
-</filter>
-
-<filter id="fx_postor">
-  <feComponentTransfer>
-    <feFuncR type="discrete" tableValues="0 1.4 -5.3 -1.8 -5.2 1"></feFuncR>
-    <feFuncG type="discrete" tableValues="0 -5.7 0.4 5.6 0.8 1"></feFuncG>
-    <feFuncB type="discrete" tableValues="0 0.2 0.4 0.6 -1.7 1"></feFuncB>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_postilt">
-  <feComponentTransfer>
-    <feFuncR type="discrete" tableValues="0 21.4 0 0 0 1"></feFuncR>
-    <feFuncG type="discrete" tableValues="0 133.4 0 1 0 1"></feFuncG>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_postel">
-  <feComponentTransfer>
-    <feFuncR type="discrete"
-        tableValues="0.1 3.1 11 0.6 -10.2 13.8"/>
-    <feFuncG type="discrete"
-        tableValues="0.2 1.5 0.4 9 4.7 8.2"/>
-    <feFuncB type="discrete"
-        tableValues="0.9 -0.2 0.4 -9.7 0.8 1"/>
-  </feComponentTransfer>
-</filter>
-
-<filter id="fx_orton">
-  <feColorMatrix type="matrix" in="SourceGraphic" result="brighter"
-    values="5.1 0 0 0 0.1
-            0 5.1 0 0 0.1
-            0 0 5.1 0 0.1
-            0 0 0 1 0"/>
-      <feGaussianBlur in="brighter" stdDeviation="3" result="brightblur"/>
-  <feBlend mode="multiply" in="brighter" in2="brightblur"/>
-</filter>
-
-<filter id="fx_santabarbara">
-  <feColorMatrix type="luminanceToAlpha" in="SourceGraphic" result="lumMap"></feColorMatrix>
-  <feComponentTransfer in="lumMap" result="highlightMask">
-    <feFuncA type="discrete" tableValues="0 0 0 0 0 0 7 6"/>
-  </feComponentTransfer>
-  <feComposite operator="in" in="SourceGraphic" in2="highlightMask" result="highlights"></feComposite>
-  <feGaussianBlur in="highlights" stdDeviation="6" result="highBlur"></feGaussianBlur>
-  <feComposite operator="over" in="highBlur" in2="SourceGraphic" result="final"></feComposite>
-</filter>
-
-<filter id="fx_santabarbara2" inkscape:label="Soft Focus Lens" inkscape:menu="Image Effects" inkscape:menu-tooltip="Glowing image content without blurring it" style="color-interpolation-filters:sRGB;">
-  <feGaussianBlur stdDeviation="5" result="result3"></feGaussianBlur>
-  <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 28 0 " result="result7"></feColorMatrix>
-  <feComposite operator="in" in2="SourceGraphic" result="result9"></feComposite>
-  <feComposite in2="result7" operator="arithmetic" in="result9" k1="0.9" k3="0.9" result="result1"></feComposite>
-  <feBlend in2="result1" result="result5" mode="screen" in="SourceGraphic"></feBlend>
-  <feBlend in2="result5" mode="darken" in="result5" result="result6"></feBlend>
-  <feComposite in2="SourceGraphic" operator="in" result="result8"></feComposite>
-</filter>
-
-<filter id="fx_spectrum">
-  <feConvolveMatrix filterRes="100 100" style="color-interpolation-filters:sRGB" order="3" kernelMatrix="0 -1 0   -1 4 -1   0 -1 0" preserveAlpha="true" />
-</filter>
-
-<filter id="fx_zombi">
-  <feFlood flood-color="#c3ff00" result="A" />
-  <feColorMatrix type="matrix" in="SourceGraphic" result="B"
-    values=" 1 0 0 0 0
-             0 0 0 0 0
-             0 1 1 0 0
-             1 1 1 0 0" />
-  <feMerge>
-    <feMergeNode in="A" />
-    <feMergeNode in="B" />
-  </feMerge>
-</filter>
-
-<!-- <filter id="fx_sepiablue" x="0%" y="0%" width="100%" height="100%">
-  <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"/>
-  <feComponentTransfer >
-    <feFuncR type="table" tableValues="0 0 0.1 1"/>
-    <feFuncG type="table" tableValues="0 .1 0.4 1"/>
-    <feFuncB type="table" tableValues="0 .2 .4 1"/>
-  </feComponentTransfer>
-</filter> -->
-
-<filter id="fx_blueray" x="0%" y="0%" width="100%" height="100%">
-  <feColorMatrix type="matrix" in="SourceGraphic" result="B"
-    values=" -1 0 0 0 -1
-             0 -1 0 0 -1
-             -.1 1 -.1 0 0
-             0 -.1 -.2 1 0" />
-</filter>
-
-<filter id="fx_hip">
-  <feColorMatrix type="matrix" in="SourceGraphic"
-    values=" -1 0 0 0 0
-             0 1 0 0 0
-             0 -1 1 0 0
-             0 0 0 1 0" />
-</filter>
-
-
-<filter id="fx_xray">
-  <feColorMatrix type="luminanceToAlpha" values=""/>
-</filter>
-
-<filter id="fx_emboss" >
-  <feColorMatrix type="luminanceToAlpha" values=""/>
-  <feDiffuseLighting diffuseConstant="1" surfaceScale="5" result="feDistantLight">
-    <feDistantLight elevation="28" azimuth="65" />
-  </feDiffuseLighting>
-</filter>
-
-<filter id="fx_edge">
-  <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-5 0 0 0 0 0 0 0 5"/>
-</filter>
-
-<!-- <filter id="fx_noir">
-  <feGaussianBlur stdDeviation="0" />
-  <feComponentTransfer>
-    <feFuncR type="discrete" tableValues="0 .5 1 1" />
-    <feFuncG type="discrete" tableValues="0 .5 1" />
-    <feFuncB type="discrete" tableValues="0" />
-  </feComponentTransfer>
-</filter> -->
-
-
-<!-- inkscape -->
-
-<filter id="fx_ripple" inkscape:label="Ripple" inkscape:menu="Distort" inkscape:menu-tooltip="Horizontal rippling of edges" style="color-interpolation-filters:sRGB;">
-  <feTurbulence numOctaves="1" baseFrequency="0.002 0.107" />
-  <feColorMatrix values="2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.5" result="result91" />
-  <feDisplacementMap yChannelSelector="A" xChannelSelector="R" scale="14.3" in="SourceGraphic" in2="result91" />
-</filter>
-
-<filter id="fx_sys42" style="color-interpolation-filters:sRGB;">
-  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.07 1 0 " result="result1"></feColorMatrix>
-  <feColorMatrix result="result3" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 -1 "></feColorMatrix>
-  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.21 0.72 0.07 0 0 " in="SourceGraphic" result="result2"></feColorMatrix>
-  <feColorMatrix result="result9" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.5 -0.5 "></feColorMatrix>
-  <feMerge result="result11">
-  <feMergeNode in="result3"></feMergeNode>
-  <feMergeNode in="result9"></feMergeNode>
-  </feMerge>
-  <feFlood flood-opacity="1" flood-color="rgb(204,255,0)" result="result10"></feFlood>
-  <feComposite in2="result11" result="result12" operator="out"></feComposite>
-  <feFlood flood-opacity="1" result="result13" flood-color="rgb(255,0,255)"></feFlood>
-  <feComposite in2="result3" result="result14" operator="in"></feComposite>
-  <feComposite in2="result12" result="result17" k3="1" k2="1" operator="arithmetic"></feComposite>
-  <feFlood flood-opacity="1" result="result15" flood-color="rgb(0,255,255)"></feFlood>
-  <feComposite in2="result9" result="result16" operator="in"></feComposite>
-  <feComposite in2="result17" result="result18" k3="1" k2="1" operator="arithmetic"></feComposite>
-  <feComposite in2="SourceGraphic" operator="in"></feComposite>
-</filter>
-
-<filter id="fx_vhs">
-  <feFlood flood-opacity="1" flood-color="rgb(255,255,255)" result="flood"></feFlood>
-  <feColorMatrix in="SourceGraphic" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 -1 0 0 1 0 " result="colormatrix1"></feColorMatrix>
-  <feOffset dy="-1" dx="-3" result="offset1"></feOffset>
-  <feBlend in2="flood" mode="multiply" result="blend1"></feBlend>
-  <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 -1 0 1 0 " result="colormatrix2"></feColorMatrix>
-  <feOffset dy="2" dx="-1" result="offset2"></feOffset>
-  <feBlend in2="blend1" mode="multiply" result="blend2"></feBlend>
-  <feOffset dy="3" dx="-2" result="offset3"></feOffset>
-  <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 -1.5 1 0 " result="colormatrix3"></feColorMatrix>
-  <feBlend in2="offset3" mode="multiply" result="blend3"></feBlend>
-</filter>
-
-<filter id="fx_vhs2">
-  <feTurbulence numOctaves="1" baseFrequency="0.002 0.107"></feTurbulence>
-  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5.5 -1.9" result="result91"></feColorMatrix>
-  <feDisplacementMap yChannelSelector="A" xChannelSelector="R" scale="10" in="SourceGraphic" in2="result91" result="glitch"></feDisplacementMap>
-  <feFlood flood-opacity="1" flood-color="rgb(255,255,255)" result="flood"></feFlood>
-  <feColorMatrix in="glitch" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 -1 0 0 1 0 " result="colormatrix1"></feColorMatrix>
-  <feOffset dy="-1" dx="-3" result="offset1"></feOffset>
-  <feBlend in2="flood" mode="multiply" result="blend1"></feBlend>
-  <feColorMatrix in="glitch" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 -1 0 1 0 " result="colormatrix2"></feColorMatrix>
-  <feOffset dy="2" dx="-1" result="offset2"></feOffset>
-  <feBlend in2="blend1" mode="multiply" result="blend2"></feBlend>
-  <feOffset dy="3" dx="-2" result="offset3"></feOffset>
-  <feColorMatrix in="glitch" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 -1.5 1 0 " result="colormatrix3"></feColorMatrix>
-  <feBlend in2="offset3" mode="multiply" result="blend3"></feBlend>
-</filter>
-
-<filter id="fx_anaglyph">
-  <feFlood
-     flood-opacity="1"
-     flood-color="rgb(255,255,255)"
-     result="flood"/>
-  <feColorMatrix
-     in="SourceGraphic"
-     values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 -1 0 0 1 0 "
-     result="colormatrix1"/>
-  <feOffset
-     dy="0"
-     dx="8"
-     result="offset1"/>
-  <feBlend
-     in2="flood"
-     mode="multiply"
-     result="blend1"/>
-  <feColorMatrix
-     in="SourceGraphic"
-     values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 -1 0 1 0 "
-     result="colormatrix2"/>
-  <feBlend
-     in2="blend1"
-     mode="multiply"
-     result="blend2"/>
-  <feColorMatrix
-     in="SourceGraphic"
-     values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 -1 1 0 "
-     result="colormatrix3"/>
-  <feBlend
-     in2="blend2"
-     mode="multiply"
-     result="blend3"/>
-</filter>
-
-<filter
-   style="color-interpolation-filters:sRGB;"
-   inkscape:label="Electrize"
-   id="fx_electrize">
-  <feGaussianBlur
-     stdDeviation="1"
-     result="blur"
-     id="feGaussianBlur4700" />
-  <feComponentTransfer
-     in="blur"
-     result="component"
-     id="feComponentTransfer4702">
-    <feFuncR
-       type="table"
-       tableValues="0 1 0 1 0"
-       id="feFuncR4704" />
-    <feFuncG
-       type="table"
-       tableValues="0 1 0 1 0"
-       id="feFuncG4706" />
-    <feFuncB
-       type="table"
-       tableValues="0 1 0 1 0"
-       id="feFuncB4708" />
-  </feComponentTransfer>
-</filter>
-
-<filter
-   style="color-interpolation-filters:sRGB;"
-   inkscape:menu="Image Paint and Draw"
-   inkscape:label="Poster Color Fun"
-   id="fx_poster_color_fun">
-  <feColorMatrix
-     type="hueRotate"
-     values="0"
-     result="result4"
-     id="feColorMatrix4763" />
-  <feColorMatrix
-     result="result7"
-     type="saturate"
-     values="1"
-     id="feColorMatrix4765" />
-  <feGaussianBlur
-     stdDeviation="1.5"
-     result="result3"
-     id="feGaussianBlur4767" />
-  <feGaussianBlur
-     result="result5"
-     stdDeviation="1.5"
-     in="result7"
-     id="feGaussianBlur4769" />
-  <feBlend
-     in2="result3"
-     mode="normal"
-     id="feBlend4771" />
-  <feComponentTransfer
-     result="result1"
-     id="feComponentTransfer4773">
-    <feFuncR
-       tableValues="0 0.5 1 0.5 0 0.5 1 0.5"
-       type="discrete"
-       id="feFuncR4775" />
-    <feFuncG
-       tableValues="0 0.5 1 0.5 0 0.5 1 0.5"
-       type="discrete"
-       id="feFuncG4777" />
-    <feFuncB
-       tableValues="0 0.5 1 0.5 0 0.5 1 0.5"
-       type="discrete"
-       id="feFuncB4779" />
-  </feComponentTransfer>
-  <feColorMatrix
-     type="hueRotate"
-     values="0"
-     id="feColorMatrix4781" />
-  <feColorMatrix
-     type="saturate"
-     values="1"
-     result="result2"
-     id="feColorMatrix4783" />
-  <feGaussianBlur
-     stdDeviation="0.01"
-     id="feGaussianBlur4785" />
-  <feComposite
-     in2="SourceGraphic"
-     operator="in"
-     result="result6"
-     id="feComposite4787" />
-</filter>
-
-<!-- <filter id="fx_bump" inkscape:menu-tooltip="Same as HSL Bumps but with transparent highlights" inkscape:menu="Bumps" inkscape:label="HSL Bumps Alpha" style="color-interpolation-filters:sRGB;">
-  <feGaussianBlur result="result0" in="SourceGraphic" stdDeviation="0.5" />
-  <feColorMatrix values="1 0 0 -1 0 1 0 1 -1 0 1 0 0 -1 0 -0.8 -1 0 4.4 -2.9 " in="result0" result="fbSourceGraphicAlpha" />
-  <feGaussianBlur stdDeviation="0.7" in="fbSourceGraphicAlpha" result="result0" />
-  <feSpecularLighting in="result0" result="result1" lighting-color="rgb(255,255,255)" surfaceScale="-2" specularConstant="1.5" specularExponent="10">
-  <feDistantLight elevation="50" azimuth="235" />
-  </feSpecularLighting>
-  <feComposite result="result4" operator="in" in="SourceGraphic" in2="result1" />
-  <feComposite operator="arithmetic" k2="1" k3="1" in2="result4" />
-</filter> -->
-
-<filter id="fx_dark_emboss" inkscape:label="Dark Emboss" inkscape:menu-tooltip="Emboss effect : 3D relief where white is replaced by black" inkscape:menu="Bumps" style="color-interpolation-filters:sRGB;">
-  <feColorMatrix result="result2" type="luminanceToAlpha" />
-  <feDiffuseLighting diffuseConstant="0.5" result="result1" surfaceScale="-10">
-  <feDistantLight elevation="20" azimuth="225" />
-  </feDiffuseLighting>
-  <feComposite result="result3" k3="1" k2="1" k1="1" in="result1" operator="arithmetic" in2="SourceGraphic" />
-  <feBlend result="result4" mode="multiply" in="result2" in2="result3" />
-  <feComposite result="result5" operator="arithmetic" k2="1.2" in2="result4" />
-  <feComposite operator="in" in="result5" in2="SourceGraphic" />
-</filter>
-
-<filter id="fx_onebit" inkscape:label="Image Drawing Basic" style="color-interpolation-filters:sRGB;" inkscape:menu-tooltip="Enhance and redraw color edges in 1 bit black and white" inkscape:menu="Image Paint and Draw" >
-  <feColorMatrix type="saturate" values="0" result="result4" />
-  <feConvolveMatrix order="3 3" kernelMatrix="0 50 0 50 -205 50 0 50 0 " in="result4" divisor="1" targetX="1" targetY="1" preserveAlpha="true" result="result0" bias="0" />
-  <feColorMatrix result="result3" values="0 -100 0 0 1 0 -100 0 0 1 0 -100 0 0 1 0 0 0 1 0 " />
-</filter>
-
-<filter id="fx_poster_draw" inkscape:label="Poster Draw" inkscape:menu="Image Paint and Draw" inkscape:menu-tooltip="Enhance and redraw edges around posterized areas" style="color-interpolation-filters:sRGB;">
-  <feGaussianBlur in="SourceGraphic" result="result18" stdDeviation="1.4"></feGaussianBlur>
-  <feColorMatrix values="0" result="result17" in="result19" type="hueRotate"></feColorMatrix>
-  <feComponentTransfer in="result17" result="component1">
-  <feFuncR type="discrete" tableValues="0 0.125 0.25 0.275 0.5 0.625 0.750 0.875 1 1"></feFuncR>
-  <feFuncG type="discrete" tableValues="0 0.125 0.25 0.275 0.5 0.625 0.750 0.875 1 1"></feFuncG>
-  <feFuncB type="discrete" tableValues="0 0.125 0.25 0.275 0.5 0.625 0.750 0.875 1 1"></feFuncB>
-  </feComponentTransfer>
-  <feColorMatrix type="saturate" values="0" result="result4" in="component1"></feColorMatrix>
-  <feConvolveMatrix order="3 3" kernelMatrix="250 0 250 0 -1005 0 250 0 250 " in="result4" divisor="1" targetX="1" targetY="1" preserveAlpha="true" result="result0" bias="0"></feConvolveMatrix>
-  <feColorMatrix type="luminanceToAlpha"></feColorMatrix>
-  <feGaussianBlur stdDeviation="0.7"></feGaussianBlur>
-  <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 10 -4 " result="result5"></feColorMatrix>
-  <feGaussianBlur stdDeviation="0.5" result="result10"></feGaussianBlur>
-  <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -1.5 " result="result14"></feColorMatrix>
-  <feFlood flood-color="rgb(124,0,60)" result="result8" flood-opacity="0.8"></feFlood>
-  <feBlend result="result16" mode="screen" in2="component1"></feBlend>
-  <feComposite in2="result14" operator="out" result="result6" in="result16"></feComposite>
-  <feComposite in2="result14" operator="in" in="result9" result="result7"></feComposite>
-  <feComposite in2="result6" result="result11" operator="arithmetic" k2="1" k3="1" in="SourceGraphic"></feComposite>
-</filter>
-
-<filter id="fx_square" inkscape:label="Cubes" inkscape:menu="Scatter" inkscape:menu-tooltip="Scattered cubes; adjust the Morphology primitive to vary size" style="color-interpolation-filters:sRGB;">
-<feTurbulence baseFrequency="0.7" numOctaves="1" type="fractalNoise"></feTurbulence>
-    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 -3.5 " result="result5"></feColorMatrix>
-    <feComposite in2="result5" operator="in" in="SourceGraphic" result="result6"></feComposite>
-    <feMorphology result="result3" radius="5" operator="dilate" in="result6"></feMorphology>
-    <feComposite in2="result4" operator="arithmetic" result="result2" k1="1" k3="1"></feComposite>
-    <feConvolveMatrix order="3 3" kernelMatrix="2 0 0 0 1 0 0 0 -1 " targetX="0" targetY="0" divisor="2" edgeMode="duplicate"></feConvolveMatrix>
-</filter>
-
-<filter id="fx_plaster" inkscape:label="Plaster Color" inkscape:menu="Bumps" inkscape:menu-tooltip="Colored plaster emboss effect" style="color-interpolation-filters:sRGB;">
-  <feGaussianBlur result="result10" stdDeviation="5" />
-  <feGaussianBlur in="SourceGraphic" result="result4" stdDeviation="1.5" />
-  <feBlend mode="darken" in2="result10" />
-  <feComposite operator="atop" in2="SourceGraphic" result="result5" />
-  <feColorMatrix type="saturate" values="0" result="result1" in="result5" />
-  <feComponentTransfer result="component1" in="result1">
-  <feFuncR type="table" tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1" />
-  <feFuncG type="table" tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1" />
-  <feFuncB type="table" tableValues="0 0.2 0.133333 0.3 0.4 0.333333 0.5 0.6 0.533333 0.7 0.8 0.733333 0.9 1 0.933333 1.1 1" />
-  </feComponentTransfer>
-  <feFlood flood-color="rgb(255,0,0)" result="result2" />
-  <feBlend in2="component1" mode="screen" result="result2" in="result2" />
-  <feBlend result="fbSourceGraphic" mode="multiply" in2="component1" />
-  <feColorMatrix result="result2" type="luminanceToAlpha" in="fbSourceGraphic" />
-  <feDiffuseLighting lighting-color="#ffffff" in="result2" diffuseConstant="1" result="result1" surfaceScale="15" >
-  <feDistantLight azimuth="31" elevation="10" />
-  </feDiffuseLighting>
-  <feSpecularLighting specularExponent="10" in="result2" result="result11" surfaceScale="-15">
-  <feDistantLight azimuth="225" elevation="45" />
-  </feSpecularLighting>
-  <feComposite operator="arithmetic" k2="0.5" k3="0.5" in2="result1" result="result12" />
-  <feComposite in="result12" in2="fbSourceGraphic" result="result9" operator="arithmetic" k2="1" k3="1" />
-  <feComposite in2="SourceGraphic" result="result7" operator="in" />
-</filter>
-
-<filter id="fx_fluorescence" inkscape:label="Fluorescence" inkscape:menu="Color" inkscape:menu-tooltip="Oversaturate colors which can be fluorescent in real world" style="color-interpolation-filters:sRGB;">
-  <feColorMatrix type="hueRotate" values="18" />
-  <feColorMatrix type="saturate" values="1" />
-  <feColorMatrix type="matrix" values="2 -1 0 0 0 0 2 -1 0 0 -1 0 2 0 0 0 0 0 1 0 " />
-</filter>
-
-<filter id="fx_plasticine" inkscape:label="Plasticine" inkscape:menu="Bumps" inkscape:menu-tooltip="Matte modeling paste emboss effect" style="color-interpolation-filters:sRGB;">
-  <feGaussianBlur result="result3" stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
-  <feComponentTransfer in="result3" result="result1">
-  <feFuncR tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" type="discrete"></feFuncR>
-  <feFuncG tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" type="discrete"></feFuncG>
-  <feFuncB tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" type="discrete"></feFuncB>
-  </feComponentTransfer>
-  <feBlend in2="result1" mode="lighten" result="result6"></feBlend>
-  <feColorMatrix result="result2" type="luminanceToAlpha" in="result6"></feColorMatrix>
-  <feDiffuseLighting lighting-color="#ffffff" in="result2" diffuseConstant="1" result="result1" surfaceScale="12">
-  <feDistantLight azimuth="225" elevation="25"></feDistantLight>
-  </feDiffuseLighting>
-  <feComposite in2="result6" k2="0.5" result="result3" k3="0.8" k1="0.2" in="result1" operator="arithmetic"></feComposite>
-  <feComposite in2="SourceGraphic" result="result7" operator="in" k2="1" in="result3"></feComposite>
-</filter>
-
-  </defs>
-</svg>
-
+</div>
+</div>
+<div class="column-right">
+<div id="div-gpt-right-sidebar">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-right-sidebar');
+});
+</script>
+</div>
+</div>
+</div>
+<!-- Dynamically add images to keyboard after page load -->
+<script>
+var speaker1 = document.getElementsByClassName('speaker1')[0];
+speaker1.src = "https://virtualpiano.net/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-sterio-sound.png"
+var speaker2 = document.getElementsByClassName('speaker2')[0];
+speaker2.src = "https://virtualpiano.net/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-sterio-sound.png"
+var vpianologo = document.getElementsByClassName('vpianologo')[0];
+vpianologo.src = "https://virtualpiano.net/wp-content/themes/twentyfourteen-child/style/img/virtual-piano-html5.png"
+</script>
+<!-- End dynamically add images to keyboard after page load -->
+<!-- Responsive keyboard -->
+<script>
+function resizeKeyboard() {
+if (jQuery(window).innerWidth() < 1280) {
+var startingValue = 1000;
+var currentWidth = jQuery(window).innerWidth();
+var marginValue = currentWidth - startingValue;
+jQuery('#opaca').css({
+'transform': 'scale(' + parseFloat(currentWidth / 1236 - 0.02) + ')',
+'transform-origin': 'top left',
+'margin-left': '10px'
+});
+jQuery('.column-center').css({
+'margin-top': marginValue + 'px'
+});
+} else {
+jQuery('#opaca').css('transform', 'scale(1)');
+jQuery('.column-center').css({
+'margin-top': '0px'
+});
+}
+}
+resizeKeyboard();
+window.addEventListener("resize", function () {
+resizeKeyboard();
+})
+</script>
+<!-- End responsive keyboard -->
 </body>
-</html>
+</html><div id="secondary">
+<h2 class="site-description">The Original Piano App | Virtual Keyboard | Online Music | Piano Game | CMAGICS</h2>
+<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+</div><!-- #primary-sidebar -->
+</div><!-- #secondary -->
+
+<!--This code will autopopulate and play song from the shared link-->
+<script>localStorage.removeItem('win');</script><!--end-->
+<!--Moved JS scripts to footer for faster page loading-->
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/pace.min.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/piano.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/notes.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/translators/translator.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/translators/retranslator.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/arm.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/db/music_list.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/keyboard.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/window_fnc.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/index.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/DOM/window_dom.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/lastsession.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/menuscreen.js"></script>
+<script async type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/quoterotator.js"></script>
+<script type="text/javascript" src="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/themes/twentyfourteen-child/js/jssocials.min.js"></script>
+</div><!-- #main -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div id="supplementary">
+<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+<aside id="text-3" class="widget widget_text"><h1 class="widget-title">Virtual Piano</h1>			<div class="textwidget">Virtual Piano empowers you to experience the Piano on your computer - online.</div>
+</aside><aside id="search-4" class="widget widget_search"><h1 class="widget-title">SEARCH</h1><form role="search" method="get" class="search-form" action="https://virtualpiano.net/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+</label>
+<input type="submit" class="search-submit" value="Search" />
+</form></aside><aside id="nav_menu-2" class="widget widget_nav_menu"><h1 class="widget-title">Music Sheets</h1><div class="menu-explore-virtual-piano-container"><ul id="menu-explore-virtual-piano" class="menu"><li id="menu-item-714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-714"><a title="Virtual Piano Music Sheets" href="https://virtualpiano.net/music-sheets/">Music Sheets</a>
+<ul  class="sub-menu">
+<li id="menu-item-720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-720"><a title="View All Virtual Piano Sheet Music" href="https://virtualpiano.net/category/music-sheets/">All Songs</a></li>
+<li id="menu-item-3381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3381"><a title="Music Sheet Categories" href="https://virtualpiano.net/music-sheets/music-sheet-categories/">Categories</a></li>
+<li id="menu-item-721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-721"><a title="Search Music Artists Music For Virtual Piano" href="https://virtualpiano.net/category/artists/">All Artists</a></li>
+<li id="menu-item-715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715"><a title="Submit A New Song To Share With The Virtual Piano Community" href="https://virtualpiano.net/music-sheets/submit-a-song/">Submit A Song</a></li>
+<li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a title="Learn How To Play Virtual Piano" href="https://virtualpiano.net/music-sheets/how-to-play/">How To Play</a></li>
+</ul>
+</li>
+</ul></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h1 class="widget-title">The World</h1><div class="menu-the-world-container"><ul id="menu-the-world" class="menu"><li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-722"><a title="The Virtual Piano Global Community" href="https://virtualpiano.net/the-world/">The World</a>
+<ul  class="sub-menu">
+<li id="menu-item-723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-723"><a title="Join The Virtual Piano Global Community" href="https://virtualpiano.net/the-world/join-the-club/">Join The Club</a></li>
+<li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a title="Virtual Piano Social Channels" href="https://virtualpiano.net/the-world/social-media-world/">The Social World</a></li>
+<li id="menu-item-5033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5033"><a title="Virtual Piano World Championships 2018" href="https://virtualpiano.net/virtual-piano-world-championships-2018/">Virtual Piano World Championships 2018</a></li>
+</ul>
+</li>
+</ul></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h1 class="widget-title">Learn / Teach</h1><div class="menu-learn-teach-container"><ul id="menu-learn-teach" class="menu"><li id="menu-item-738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-738"><a title="Learn How To Play The Piano &#038; Register As A Piano Teacher" href="https://virtualpiano.net/learn-teach/">Learn / Teach</a>
+<ul  class="sub-menu">
+<li id="menu-item-2779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2779"><a href="https://virtualpiano.net/learn-teach/top-18-piano-courses-online/">Top 18 Piano Courses Online</a></li>
+<li id="menu-item-740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-740"><a title="Search For A Piano Teacher Near You" href="https://virtualpiano.net/learn-teach/find-a-piano-teacher/">Find a Piano Teacher</a></li>
+<li id="menu-item-739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-739"><a title="Register As A Qualified Piano Teacher In Your City" href="https://virtualpiano.net/learn-teach/register-as-a-piano-teacher/">Register as a Piano Teacher</a></li>
+</ul>
+</li>
+</ul></div></aside><aside id="nav_menu-5" class="widget widget_nav_menu"><h1 class="widget-title">Watch</h1><div class="menu-watch-container"><ul id="menu-watch" class="menu"><li id="menu-item-748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-748"><a title="View Virtual Piano YouTube Videos" href="https://virtualpiano.net/watch/">Watch</a>
+<ul  class="sub-menu">
+<li id="menu-item-749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-749"><a title="View Inspirational Virtual Piano Videos Online" href="https://virtualpiano.net/watch/the-best-piano-videos/">The Best Piano Videos</a></li>
+<li id="menu-item-750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-750"><a title="Learn How To Upload Your Virtual Piano Videos" href="https://virtualpiano.net/watch/how-to-upload/">How To Upload</a></li>
+<li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2009"><a title="Record A Virtual Piano Video" href="https://virtualpiano.net/watch/record-a-virtual-piano-video/">Record Virtual Piano</a></li>
+</ul>
+</li>
+</ul></div></aside><aside id="nav_menu-6" class="widget widget_nav_menu"><h1 class="widget-title">About</h1><div class="menu-about-container"><ul id="menu-about" class="menu"><li id="menu-item-759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-759"><a title="About Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/">About Virtual Piano</a>
+<ul  class="sub-menu">
+<li id="menu-item-803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-803"><a title="Information For Parents About Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/for-parents/">For Parents</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a title="Work For Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/jobs/">Jobs</a></li>
+<li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a title="Learn About Partnering With Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/partnerships/">Partnerships</a></li>
+<li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a title="Press Resources For Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/press/">Press</a></li>
+<li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a title="Contact Virtual Piano" href="https://virtualpiano.net/about-virtual-piano-2/contact/">Contact</a></li>
+</ul>
+</li>
+</ul></div></aside>		<aside id="recent-posts-6" class="widget widget_recent_entries">		<h1 class="widget-title">LATEST</h1>		<ul>
+<li>
+<a href="https://virtualpiano.net/your-reality-doki/">Your Reality &#8211; Doki</a>
+</li>
+<li>
+<a href="https://virtualpiano.net/metal-gear-solid-theme-tappi-iwase-rika-muranakakonami-metal-gear-solid/">Metal Gear Solid Theme &#8211; Tappi Iwase, Rika Muranaka,Konami (Metal Gear Solid)</a>
+</li>
+<li>
+<a href="https://virtualpiano.net/glassy-sky-amanda-lee-tokyo-ghoul/">Glassy Sky &#8211; Amanda Lee (Tokyo Ghoul)</a>
+</li>
+<li>
+<a href="https://virtualpiano.net/wedding-march-felix-mendelssohn/">Wedding March &#8211; Felix Mendelssohn</a>
+</li>
+<li>
+<a href="https://virtualpiano.net/we-are-the-crystal-gems-chris-mcdonnell-steve-universe-theme-song/">We Are The Crystal Gems &#8211; Chris McDonnell (Steve Universe &#8211; Theme Song)</a>
+</li>
+</ul>
+</aside>		<aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">SONG THEME</h1>		<ul>
+<li class="cat-item cat-item-17"><a href="https://virtualpiano.net/category/artists/" title="Find your favourite artist and play their songs on Virtual Piano. Use the tags to explore songs in particular albums or other artists of the same genre.">Artists</a>
+</li>
+<li class="cat-item cat-item-8"><a href="https://virtualpiano.net/category/music-sheets/" title="Learn to play your favourite song, explore some brand new music or try out a classic piano piece! Songs are arranged both by song title and music artist in the Virtual Piano Music Sheets.">Music Sheets</a>
+</li>
+<li class="cat-item cat-item-1675"><a href="https://virtualpiano.net/category/virtualpianocomp/" >VirtualPianoComp</a>
+</li>
+</ul>
+</aside><aside id="nav_menu-7" class="widget widget_nav_menu"><h1 class="widget-title">House Rules</h1><div class="menu-secondary-footer-container"><ul id="menu-secondary-footer" class="menu"><li id="menu-item-1059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1059"><a title="House Rules at Virtual Piano" href="https://virtualpiano.net/house-rules/">House Rules</a></li>
+<li id="menu-item-1073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1073"><a title="Terms &#038; Conditions (T&#038;C&#8217;s)" href="https://virtualpiano.net/terms-conditions-tcs/">T&#038;C&#8217;s</a></li>
+<li id="menu-item-1074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1074"><a title="Your privacy on Virtual Piano" href="https://virtualpiano.net/privacy/">Privacy</a></li>
+</ul></div></aside>	</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->
+<li id="text-9" class="widget widget_text categoryspace">			<div class="textwidget"><p><center style="background: transparent;"></p>
+<div id="div-gpt-cross-site-leaderboard">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-cross-site-leaderboard');
+});
+</script>
+</div>
+<p></center></p>
+<div style="background-color: #2f2f2f; line-height: 23px; text-align: center; padding-bottom: 20px; padding-top: 20px;">
+<h2>POPULAR THEMES</h2>
+<hr />
+<p><div class="su-row"><div class="su-column su-column-size-1-5"><div class="su-column-inner su-clearfix"> <a title="Music Sheets for Songs from Movies" href="https://virtualpiano.net/tag/songs-from-movies/">Songs From Movies</a><br />
+<a title="Music Sheets for Songs from Games" href="https://virtualpiano.net/tag/songs-from-games/">Songs From Games</a><br />
+<a title="Music Sheets for Songs from TV" href="https://virtualpiano.net/tag/songs-from-tv/">Songs From TV</a><br />
+<a title="Music Sheets for Christmas Songs" href="https://virtualpiano.net/tag/christmas-songs/">Christmas Songs</a><br />
+<a title="Music Sheets From The Stage" href="https://virtualpiano.net/tag/songs-from-the-stage/">From The Stage</a><br />
+<a title="Music Sheets From Disney Films" href="https://virtualpiano.net/tag/disney/">Disney</a> </div></div><div class="su-column su-column-size-1-5"><div class="su-column-inner su-clearfix"> <a title="Classical Music" href="https://virtualpiano.net/tag/classical-music/">Classical</a><br />
+<a title="Pop Songs" href="https://virtualpiano.net/tag/pop/">Pop</a><br />
+<a title="Rock Songs" href="https://virtualpiano.net/tag/rock/">Rock</a><br />
+<a title="Dance Music Sheets" href="https://virtualpiano.net/tag/dance/">Dance</a><br />
+<a title="Indie Music Sheets" href="https://virtualpiano.net/tag/indie/">Indie</a><br />
+<a title="RnB Music Sheets" href="https://virtualpiano.net/tag/RnB/">RnB</a>/<a title="Rap Music Sheets" href="https://virtualpiano.net/tag/Rap/">Rap</a> </div></div><div class="su-column su-column-size-1-5"><div class="su-column-inner su-clearfix"> <a title="USA Music Sheets" href="https://virtualpiano.net/tag/u-s-a/">U.S.A</a><br />
+<a title="UK Music Sheets" href="https://virtualpiano.net/tag/u-k/">UK</a><br />
+<a title="Music Sheets for Japanese Songs" href="https://virtualpiano.net/tag/japan/">Japan</a><br />
+<a title="Music Sheets for Canadian Songs" href="https://virtualpiano.net/tag/canada/">Canada</a><br />
+<a title="French Music Sheets" href="https://virtualpiano.net/tag/france/">France</a><br />
+<a title="South Korean Music Sheets" href="https://virtualpiano.net/tag/south-korea/">South Korea</a><br />
+<a title="Russian Music Sheets" href="https://virtualpiano.net/tag/russia/">Russia</a> </div></div><div class="su-column su-column-size-1-5"><div class="su-column-inner su-clearfix"> <a title="Coldplay Music Sheets" href="https://virtualpiano.net/tag/coldplay/">Coldplay</a><br />
+<a title="One Direction Music Sheets" href="https://virtualpiano.net/tag/one-direction/">One Direction</a><br />
+<a title="Final Fantasy Music Sheets" href="https://virtualpiano.net/tag/final-fantasy/">Final Fantasy</a><br />
+<a title="Hans Zimmer Music Sheets" href="https://virtualpiano.net/tag/Hans-Zimmer/">Hans Zimmer</a><br />
+<a title="The Beatles Music Sheets" href="https://virtualpiano.net/tag/the-beatles/">The Beatles</a><br />
+<a title="Adele Music Sheets" href="https://virtualpiano.net/tag/adele/">Adele</a><br />
+<a title="Beethoven Music Sheets" href="https://virtualpiano.net/tag/beethoven/">Beethoven</a></div></div><div class="su-column su-column-size-1-5"><div class="su-column-inner su-clearfix"> <a title="Expert Level Music Sheets" href="https://virtualpiano.net/tag/expert/">Expert</a><br />
+<a title="Intermediate Level Music Sheets" href="https://virtualpiano.net/tag/intermediate/">Intermediate</a><br />
+<a title="Easy To Play Music Sheets" href="https://virtualpiano.net/tag/easy/">Easy</a><br />
+<a title="Nursery Rhyme Music Sheets" href="https://virtualpiano.net/tag/nursery-rhyme/">Nursery Rhyme</a></div></div></div></p>
+</div>
+<div style="line-height: 23px; text-align: center; padding-bottom: 20px; padding-top: 20px;"><div class="su-row"><div class="su-column su-column-size-1-3"><div class="su-column-inner su-clearfix"></p>
+<div id="div-gpt-cross-site-left">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-cross-site-left');
+});
+</script>
+</div>
+<p></div></div><div class="su-column su-column-size-1-3"><div class="su-column-inner su-clearfix"></p>
+<div id="div-gpt-cross-site-center">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-cross-site-center');
+});
+</script>
+</div>
+<p></div></div><div class="su-column su-column-size-1-3"><div class="su-column-inner su-clearfix"></p>
+<div id="div-gpt-cross-site-right">
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.display('div-gpt-cross-site-right');
+});
+</script>
+</div>
+<p></div></div></div></p></div>
+<hr />
+<div style="line-height: 23px; padding: 20px 30px 20px 30px;">
+<p>Since its inception, Virtual Piano has been used as a learning tool in the world’s most prestigious schools – it has helped young children to get a feel for music – it has been the stepping stone for some of the world’s greatest artists. Virtual Piano is fast becoming a form of expression and communication between different cultures and regions of the world – crossing language, space and time. Our vision is to spread the joy of playing the piano to every corner of the globe. Our goal is to engage and inspire people of all ages and abilities, to nurture a passion for music.</p>
+</div>
+</div>
+</li>    <div class="site-info">
+<center><div id="social" class="miniWidth"><br />CONNECT WITH A WORLDWIDE NETWORK OF PIANISTS<hr style="width: 30%; background: #ff8322;">
+<ul>
+<li class="facebook" data-text="Get Inspired on Facebook" data-network="facebook" title="Get Inspired on Facebook"><a href="https://www.facebook.com/VirtualPiano" target="_blank">Facebook</a></li>
+<li class="twitter" data-text="Share The Love on Twitter" data-network="twitter" title="Share The Love on Twitter"><a href="http://twitter.com/bestpiano" target="_blank">Twitter</a></li>
+<li class="google" data-text="Participate on Google+" data-network="google" title="Participate on Google+"><a href="http://www.google.com/+virtualpianonet" target="_blank">Google+</a></li>
+<li class="youtube" data-text="Discover The Best Videos on YouTube" data-network="youtube" title="Discover The Best Videos on YouTube"><a href="http://www.youtube.com/cmagicspiano" target="_blank">YouTube</a></li>
+</ul></div>
+</center>
+<center><div class="vpcredits">
+&#169;2018 Virtual Piano  |  Property of Crystal Magic Studio Ltd  |
+<a href="http://www.cmagics.com">Powered by CMAGICS</a>
+</div></center>
+</div><!-- .site-info -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<div id="cookie-law-info-bar"><span>We use cookies to personalise content, features and experiences. We'll assume you're ok with this, but you can opt-out if you wish.&nbsp; <a href="https://virtualpiano.net/privacy/" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >Read More</a> <a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept</a></span></div>		
+<script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function() {
+cli_show_cookiebar({
+settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":true,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+});
+});
+//]]>
+</script>
+<div style="display:none">
+</div>
+<!-- <link rel='stylesheet' id='su-box-shortcodes-css'  href='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/shortcodes-ultimate/assets/css/box-shortcodes.css?ver=4.10.2' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/cache/wpfc-minified/f1f0fcc2e3e196e0d7ad4d0c79e224ef/1538224427index.css" media="all"/>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201844'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2018Novaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.8.7'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.1.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var featuredSliderDefaults = {"prevText":"Previous","nextText":"Next"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/fourteen-extended/js/jquery.flexslider-min.js?ver=4.8.7'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/fourteen-extended/js/functions.js?ver=4.8.7'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-content/plugins/fourteen-extended/js/slider-slide.js?ver=4.8.7'></script>
+<script type='text/javascript' src='https://vpzone-xfojsycixf.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.8.7'></script>
+<!-- Shortcodes Ultimate custom CSS - begin -->
+<style type='text/css'>
+.su-row {
+clear: both;
+zoom: 1;
+margin-bottom: 0em;
+}
+</style>
+<!-- Shortcodes Ultimate custom CSS - end -->
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=123858854427503&version=v2.3";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201844.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'72801843',post:'33',tz:'0',srv:'virtualpiano.net'} ]);
+_stq.push([ 'clickTrackerInit', '72801843', '33' ]);
+</script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.23798513412476 seconds, on 02-11-18 0:00:02 --><!-- via php -->
